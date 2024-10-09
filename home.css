@@ -1,0 +1,699 @@
+/* works perfectly */
+/* Global Variables */
+:root {
+    --dark-blue: #2a3e4b;
+    --teal: #4cbbb3;
+    --light-gray: #dcdfd8;
+    --medium-gray: #8f9c9d;
+    --forest-green: #3d6f6d;
+    --dark-olive: #5a5f4e;
+    --bright-teal: #70d0cc;
+    --sea-green: #428c7c;
+    --navy-gray: #44546c;
+    --dark-teal: #248c84;
+    --nav-footer: #020e26;
+    --nav-text: #8df0e6;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-blue);
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 30px;
+    background-color: var(--nav-footer);
+    color: white;
+    height: 60px;
+    /* Fixed height for the navbar */
+    position: sticky;
+    /* Make the navbar sticky */
+    top: 0;
+    /* Position it at the top */
+    z-index: 1000;
+    /* Ensure it appears above other content */
+}
+
+/* Logo */
+.navbar .logo img {
+    max-height: 120px;
+    /* Adjust the logo height to fit within the navbar */
+    width: auto;
+    /* Maintain the aspect ratio */
+    object-fit: contain;
+    /* Prevents the logo from stretching */
+    padding-top: 25px;
+    /* Equal padding on all sides */
+    box-sizing: border-box;
+    /* Ensures padding is included in the element's total width/height */
+}
+
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+}
+
+.nav-links a:hover {
+    color: var(--bright-teal);
+}
+
+/* Responsive Styles for Navbar */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        height: auto;
+        /* Allow navbar to expand */
+    }
+
+    .nav-links {
+        display: block;
+        /* Stack links vertically */
+        width: 100%;
+        /* Full width for nav links */
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin-bottom: 10px;
+        /* Add spacing between stacked links */
+    }
+
+    .nav-links a {
+        font-size: 1.2rem;
+        padding: 10px 0;
+        display: block;
+        /* Make links take full width */
+        text-align: left;
+        padding-left: 20px;
+        /* Align text with some padding */
+    }
+
+    .navbar .logo img {
+        max-height: 80px;
+        /* Adjust logo size for smaller screens */
+    }
+}
+
+/* Hero Section */
+.hero {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    /* Two equal columns */
+    align-items: center;
+    /* Center content vertically */
+    height: 100vh;
+    /* Full viewport height */
+    overflow: hidden;
+    position: relative;
+    /* Positioning context for background video */
+    flex-wrap: wrap;
+}
+
+
+
+.hero-video {
+    position: absolute;
+    /* Position the video absolutely */
+    top: 50%;
+    /* Center the video vertically */
+    left: 50%;
+    /* Center the video horizontally */
+    min-width: 100%;
+    /* Ensure the video covers the entire width */
+    min-height: 100%;
+    /* Ensure the video covers the entire height */
+    z-index: 0;
+    /* Place the video behind other content */
+    transform: translate(-50%, -50%);
+    /* Center the video */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    /* Ensure content appears above the video */
+    padding: 40px;
+    /* Add more padding around content */
+    text-align: center;
+    /* Center text alignment */
+}
+
+
+.transition-heading h1 {
+    font-family: "Roboto Condensed", sans-serif;
+    /* Font family */
+    font-size: 3rem;
+    /* Increased font size */
+    font-weight: 900;
+    /* Bold weight */
+    margin: 0 0 30px;
+    /* Increased margin below the heading */
+    color: white;
+    padding-bottom: 30%;
+    margin-left: 30px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* New Flex Container for Text and Button */
+.hero-text-content {
+    display: flex;
+    /* Use flexbox for layout */
+    flex-direction: column;
+    /* Stack elements vertically */
+    align-items: center;
+    /* Center elements horizontally */
+}
+
+.hero-text-content p {
+    margin: 30px 0;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    /* Increased margin above and below the paragraph */
+    font-size: 1.4rem;
+    /* Adjusted font size */
+    line-height: 1.4;
+    /* Improved line spacing */
+    color: white
+}
+
+/* Call to Action Button */
+.cta-button {
+    padding: 15px 30px;
+    /* Increase padding for larger button */
+    background-color: #428c7c;
+    /* Button color */
+    color: white;
+    /* Text color for button */
+    border: none;
+    border-radius: 25px;
+    /* More rounded corners */
+    cursor: pointer;
+    /* Pointer on hover */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for background color */
+    font-size: 1.2rem;
+    /* Larger font size */
+    margin-top: 20px;
+    /* Increased margin above the button */
+
+}
+
+/* Hover effect for CTA button */
+.cta-button:hover {
+    background-color: #2e5454;
+    /* Darker color on hover */
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+        /* Stack columns on small screens */
+        text-align: center;
+        /* Center text on small screens */
+    }
+
+    .transition-heading {
+        font-size: 50%;
+    }
+
+}
+
+/* Responsive Styles */
+@media (max-width: 1230px) {
+    .hero {
+        grid-template-columns: 1fr;
+        /* Stack columns on small screens */
+        text-align: center;
+        /* Center text on small screens */
+    }
+
+}
+
+
+/* Additional adjustments for smaller screens */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 20px;
+        /* Reduce padding for smaller devices */
+        margin-bottom: 30px;
+        /* Ensure spacing below content */
+    }
+
+    .transition-heading h1 {
+        font-size: 3rem;
+        /* Decrease font size */
+        margin: 0;
+        /* Remove margin for better fit */
+    }
+
+    .hero-text-content p {
+        font-size: 1.2rem;
+        /* Adjust paragraph font size */
+        margin: 15px 0;
+        /* Reduce margin for better spacing */
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        /* Reduce button size */
+        font-size: 1rem;
+        /* Adjust button font size */
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    .hero {
+        padding: 10px;
+        /* Further reduce padding */
+    }
+
+    .transition-heading h1 {
+        font-size: 2.5rem;
+        /* Further decrease heading font size */
+    }
+
+    .hero-text-content p {
+        font-size: 1rem;
+        /* Further adjust paragraph font size */
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        /* Further reduce button padding */
+        font-size: 0.9rem;
+        /* Further adjust button font size */
+    }
+}
+
+/* Timed transition for heading */
+.transition-heading {
+    position: relative;
+    height: 70px;
+    /* Adjust this as needed */
+    overflow: visible;
+}
+
+.headline {
+    position: absolute;
+    width: auto;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+    font-size: 2.5rem;
+}
+
+.first-part {
+    animation: showFirst 7s ease-in-out infinite;
+    /* Adjust duration as needed */
+}
+
+.second-part {
+    animation: showSecond 7s ease-in-out infinite;
+    /* Adjust duration as needed */
+}
+
+/* Keyframes for the first part */
+@keyframes showFirst {
+
+    0%,
+    10% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    15%,
+    40% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50%,
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* Keyframes for the second part */
+@keyframes showSecond {
+
+    0%,
+    50% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    55%,
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    90%,
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+/* Services Section */
+.services {
+    padding: 60px 20px;
+    background-color: #2a3e4b;
+    text-align: center;
+}
+
+.services h2 {
+    color: var(--light-gray);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 0 0 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* Allow wrapping for smaller screens */
+    gap: 20px;
+    /* Add space between cards */
+}
+
+
+.service-card {
+    background-color: transparent;
+    color: var(--light-gray);
+    border: 0px;
+    border-radius: 0px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    width: 25%;
+    /* Set width for each card */
+    padding: 0px;
+    /* margin: 10px 0; */
+    /* Margin for vertical spacing between rows */
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Align content evenly */
+    min-height: 400px;
+    /* Set a consistent height for each card */
+    padding-bottom: 30px;
+
+
+}
+
+.service-image {
+    width: 100%;
+    /* Make the image take up the full width of the card */
+    height: 350px;
+    /* Maintain the aspect ratio of the image */
+    border-radius: 0px;
+    /* Optional: Keep the border-radius for rounded corners */
+    object-fit: cover;
+    /* Ensure the image covers the space without stretching */
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+}
+
+
+.explore-button {
+    margin-top: auto;
+    /* Push the button to the bottom */
+    display: inline-flex;
+    padding: 10px 20px;
+    /* Padding for a comfortable clickable area */
+    background-color: var(--dark-teal);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    text-align: center;
+    width: auto;
+    /* Let the width adjust based on content */
+    max-width: 50%;
+    /* Prevent the button from exceeding card width */
+    white-space: nowrap;
+    /* Prevent the text from wrapping onto a new line */
+    align-self: center;
+}
+
+.explore-button:hover {
+    background-color: var(--bright-teal);
+    /* Change background on hover */
+}
+
+
+
+.service-image {
+    max-width: 100%;
+    height: 420px;
+    border-radius: 0px;
+    padding-bottom: 10px;
+}
+
+.service-description {
+    margin: 15px 0;
+    font-size: 1rem;
+    color: var(--light-gray);
+    flex-grow: 1;
+}
+
+.explore-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--dark-teal);
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: auto;
+    /* Push the button to the bottom */
+}
+
+.explore-button:hover {
+    background-color: var(--bright-teal);
+}
+
+/* Responsive Design for Stacking Service Cards */
+@media (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 100%;
+        max-width: 400px;
+        /* Set max-width for responsiveness */
+    }
+}
+
+
+
+/* Basic styling for the footer */
+.footer-container {
+    background-color: var(--nav-footer);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: var(--nav-text);
+}
+
+.newsletter {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-left: 20px;
+
+}
+
+.newsletter h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+
+.newsletter-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.newsletter-form button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #2e5454;
+    /* color change */
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.newsletter-form button:hover {
+    background-color: #4cbbb3;
+    /* color change */
+}
+
+.hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 0.5px solid #2e5454;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: var(--nav-text);
+    padding: 10px;
+    padding-left: 30px;
+
+}
+
+.footer-section {
+    width: 30%;
+    margin-bottom: 20px;
+    margin: 10px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: var(--light-gray);
+
+}
+
+.footer-section ul li a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.social-media .social-icons {
+    display: flex;
+    gap: 10px;
+    color: #8df0e6;
+}
+
+.social-media {
+    /* margin-right: auto; */
+    align-items: self-end;
+    margin-right: 0px;
+    padding-right: 0px;
+}
+
+.social-media .social-icons img {
+    width: 24px;
+    height: 24px;
+
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+.footer-bottom span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+        /* Stack the columns vertically */
+        grid-template-rows: auto;
+        /* Ensure the rows adjust based on content */
+        grid-gap: 20px;
+        /*Add some space between the items */
+    }
+
+    .hero-heading {
+        text-align: center;
+        /* Optional: Center the heading */
+    }
+
+    .hero-content {
+        padding: 20px;
+        /* Add padding for better spacing */
+    }
+}
