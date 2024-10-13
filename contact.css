@@ -85,7 +85,7 @@ body {
     box-shadow: 0px 0px 9px rgba(255, 255, 255, 0.9);
     transition: transform 0.2s ease, background-color 0.3s ease;
     width: 100%; /* Adjust width to fit the grid */
-    height: 230px;
+    height: 250px;
 }
 
 .grid-item h4 {
@@ -97,7 +97,7 @@ body {
 
 .grid-item p:hover {
     font-size: 1.3rem;  /* Enlarge the text */
-    color: #3f96ac;     /* Change color to light greenish */
+    color: #071c3b;     /* Change color to light greenish */
     transition: font-size 0.2s ease, color 0.2s ease; /* Smooth transition */
 }
 
@@ -117,19 +117,19 @@ body {
 }
 
 .icon:hover {
-    transform: scale(1.1);
+    transform: scale(1);
 }
 
 /* Hover Effect for Grid Items */
 .grid-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
     transition: transform 0.2s;
     background-color: rgba(195, 193, 211, 0.15);
 }
 
 /* Contact Form Section */
 .contact-form {
-    color: #dcdfd8;
+    color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     margin: 20px auto; /* Center the form section */
@@ -144,8 +144,8 @@ body {
     0% { color: #5c798d; } /* Teal */
     25% { color: #91bfce; } /* Light Blue */
     50% { color: #c5c1fd; } /* Lavender */
-    75% { color: #f7f7f7; } /* White Smoke */
-    100% { color: #87c2fd; } /* Sky Blue */
+    75% { color: #3eb6a6; } /* White Smoke */
+    100% { color: #779abd; } /* Sky Blue */
 }
 
 .contact-form h3 {
@@ -167,14 +167,14 @@ body {
     margin-bottom: 15px; /* Space below inputs */
     border-radius: 5px; /* Rounded corners */
     border: 1px solid #ccc; /* Border color */
-    background-color: #ffffff; /* Light background */
+    background-color: #c9cfc7; /* Light background */
 }
 
 .contact-form button {
     width: 20%; /* Full width button */
     font-size:15px;
     padding: 12px; /* Padding inside the button */
-    background-color: #39a7bb; /* Button color */
+    background-color: #145761; /* Button color */
     color: white; /* Button text color */
     border: none; /* No border */
     border-radius: 5px; /* Rounded corners */
@@ -183,7 +183,7 @@ body {
 }
 
 .contact-form button:hover {
-    background-color: #067377; /* Change color on hover */
+    background-color: #40a0a3; /* Change color on hover */
 }
 
 /* Responsive design for contact form */
@@ -418,3 +418,4 @@ body {
         text-align: center;
     }
 }
+
