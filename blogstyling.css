@@ -135,6 +135,61 @@ img {
     }
 }
 
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+    border: none;
+    outline: none;
+    color: white;
+    margin: 0 15px;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: 1.3rem;
+    padding: 5px 0px;
+}
+
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #dcdfd8;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 10px;
+
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: var(--nav-footer);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+
+
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+    color: var(--bright-teal);
+
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 .title{
     font-size: large;
     color:#70d0cc;
