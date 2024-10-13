@@ -1,9 +1,8 @@
-
 body {
     font-family: Arial, sans-serif;
-    background-image: url('2.jpg');
+    background-image: url('images/contact/2.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 36%; 
+    background-size: 100% 36%;
     background-position: center top;
     background-attachment: scroll;
     background-color: var(--dark-teal);
@@ -17,33 +16,41 @@ body {
     position: relative;
     text-align: center;
     color: #fff;
-    height: 150px; 
+    height: 150px;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     margin-top: 160px;
-    overflow: hidden; /* Hide overflowing text */
+    overflow: hidden;
+    /* Hide overflowing text */
 }
 
 .banner-message {
-    position: absolute; /* Position it within the banner */
-    left: 100%; /* Start off-screen to the right */
+    position: absolute;
+    /* Position it within the banner */
+    left: 100%;
+    /* Start off-screen to the right */
     color: #ffffff;
     z-index: 1;
     padding: 20px;
     border-radius: 10px;
     font-size: 3.5rem;
-    white-space: nowrap; /* Prevent line breaks */
-    animation: scrollText 6s linear infinite; /* Call the animation */
+    white-space: nowrap;
+    /* Prevent line breaks */
+    animation: scrollText 6s linear infinite;
+    /* Call the animation */
 }
 
 /* Keyframe Animation for Horizontal Scrolling */
 @keyframes scrollText {
     0% {
-        transform: translateX(0); /* Start at the right edge */
+        transform: translateX(0);
+        /* Start at the right edge */
     }
+
     100% {
-        transform: translateX(-300%); /* Move to the left, out of view */
+        transform: translateX(-300%);
+        /* Move to the left, out of view */
     }
 }
 
@@ -55,13 +62,14 @@ body {
     padding: 20px;
     font-size: 1.6rem;
     color: #ffffff;
-    margin-top: 350px; /* Proper margin for spacing */
+    margin-top: 350px;
+    /* Proper margin for spacing */
 }
 
 .contact-info h3 {
     margin-bottom: -8px;
     margin-top: 0;
-    padding:35px;
+    padding: 35px;
     color: #ffffff;
     font-size: 30px;
 }
@@ -72,8 +80,10 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 70px;
     width: 80%;
-    margin: 0 auto;  /* Center the grid */
-    padding-left: 0;  /* Adjust padding */
+    margin: 0 auto;
+    /* Center the grid */
+    padding-left: 0;
+    /* Adjust padding */
 }
 
 .grid-item {
@@ -84,7 +94,8 @@ body {
     text-align: center;
     box-shadow: 0px 0px 9px rgba(255, 255, 255, 0.9);
     transition: transform 0.2s ease, background-color 0.3s ease;
-    width: 100%; /* Adjust width to fit the grid */
+    width: 100%;
+    /* Adjust width to fit the grid */
     height: 230px;
 }
 
@@ -96,9 +107,12 @@ body {
 }
 
 .grid-item p:hover {
-    font-size: 1.3rem;  /* Enlarge the text */
-    color: #3f96ac;     /* Change color to light greenish */
-    transition: font-size 0.2s ease, color 0.2s ease; /* Smooth transition */
+    font-size: 1.3rem;
+    /* Enlarge the text */
+    color: #3f96ac;
+    /* Change color to light greenish */
+    transition: font-size 0.2s ease, color 0.2s ease;
+    /* Smooth transition */
 }
 
 .grid-item p {
@@ -132,74 +146,122 @@ body {
     color: #dcdfd8;
     padding: 20px;
     border-radius: 10px;
-    margin: 20px auto; /* Center the form section */
-    width: 70%; /* Width of the form */
-    max-width: 600px; /* Maximum width */
-    margin-top: 50px; /*moving down if no inc*/
-    margin-left:60px;
+    margin: 20px auto;
+    /* Center the form section */
+    width: 70%;
+    /* Width of the form */
+    max-width: 600px;
+    /* Maximum width */
+    margin-top: 50px;
+    /*moving down if no inc*/
+    margin-left: 60px;
 }
 
 /* Animation for alternating colors */
 @keyframes alternateColors {
-    0% { color: #5c798d; } /* Teal */
-    25% { color: #91bfce; } /* Light Blue */
-    50% { color: #c5c1fd; } /* Lavender */
-    75% { color: #f7f7f7; } /* White Smoke */
-    100% { color: #87c2fd; } /* Sky Blue */
+    0% {
+        color: #5c798d;
+    }
+
+    /* Teal */
+    25% {
+        color: #91bfce;
+    }
+
+    /* Light Blue */
+    50% {
+        color: #c5c1fd;
+    }
+
+    /* Lavender */
+    75% {
+        color: #f7f7f7;
+    }
+
+    /* White Smoke */
+    100% {
+        color: #87c2fd;
+    }
+
+    /* Sky Blue */
 }
 
 .contact-form h3 {
     text-align: center;
     margin-bottom: 20px;
     font-size: 1.8rem;
-    animation: alternateColors 1s infinite; /* Apply the animation */
+    animation: alternateColors 1s infinite;
+    /* Apply the animation */
 }
 
 
 .contact-form label {
-    display: block; /* Block display for labels */
-    margin: 10px 0 5px; /* Margins for spacing */
+    display: block;
+    /* Block display for labels */
+    margin: 10px 0 5px;
+    /* Margins for spacing */
 }
 
-.contact-form input, .contact-form textarea {
-    width: 100%; /* Full width inputs */
-    padding: 10px; /* Padding inside inputs */
-    margin-bottom: 15px; /* Space below inputs */
-    border-radius: 5px; /* Rounded corners */
-    border: 1px solid #ccc; /* Border color */
-    background-color: #ffffff; /* Light background */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    /* Full width inputs */
+    padding: 10px;
+    /* Padding inside inputs */
+    margin-bottom: 15px;
+    /* Space below inputs */
+    border-radius: 5px;
+    /* Rounded corners */
+    border: 1px solid #ccc;
+    /* Border color */
+    background-color: #ffffff;
+    /* Light background */
 }
 
 .contact-form button {
-    width: 20%; /* Full width button */
-    font-size:15px;
-    padding: 12px; /* Padding inside the button */
-    background-color: #39a7bb; /* Button color */
-    color: white; /* Button text color */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    margin-left:430px;
+    width: 20%;
+    /* Full width button */
+    font-size: 15px;
+    padding: 12px;
+    /* Padding inside the button */
+    background-color: #39a7bb;
+    /* Button color */
+    color: white;
+    /* Button text color */
+    border: none;
+    /* No border */
+    border-radius: 5px;
+    /* Rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
+    margin-left: 430px;
 }
 
 .contact-form button:hover {
-    background-color: #067377; /* Change color on hover */
+    background-color: #067377;
+    /* Change color on hover */
 }
 
 /* Responsive design for contact form */
 @media (max-width: 768px) {
     .contact-form {
-        width: 90%; /* Adjust width for smaller screens */
+        width: 90%;
+        /* Adjust width for smaller screens */
     }
 }
 
 /* Testimonial Styles */
 .testimonial-container {
-    width: 32%; /* Adjust width as needed */
-    margin-left: 850px; /* Aligns container to the right */
-    margin-right: 20px; /* Space between contact form and testimonials */
-    position: relative; /* Allow positioning of child elements */
-    top: -470px; /* Adjust this value to move the container up */
+    width: 32%;
+    /* Adjust width as needed */
+    margin-left: 850px;
+    /* Aligns container to the right */
+    margin-right: 20px;
+    /* Space between contact form and testimonials */
+    position: relative;
+    /* Allow positioning of child elements */
+    top: -470px;
+    /* Adjust this value to move the container up */
 }
 
 .testimonial {
@@ -207,13 +269,17 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    transition: transform 0.2s; /* Transition for smooth scaling */
-    margin-bottom: 20px; /* Add gap between testimonials */
+    transition: transform 0.2s;
+    /* Transition for smooth scaling */
+    margin-bottom: 20px;
+    /* Add gap between testimonials */
 }
 
 .testimonial:hover {
-    transform: scale(1.02); /* Slightly enlarges the testimonial on hover */
-    transition: transform 0.2s; /* Smooth transition */
+    transform: scale(1.02);
+    /* Slightly enlarges the testimonial on hover */
+    transition: transform 0.2s;
+    /* Smooth transition */
 }
 
 .testimonial-header {
@@ -232,19 +298,19 @@ body {
 }
 
 .testimonial-1 .avatar {
-    background-image: url('boy.jpg');
+    background-image: url('images/contact/boy.jpg');
     background-repeat: no-repeat;
-    background-position: right center; 
-   background-size: 130% 150% 150%  ;
-   margin-right: 5px;
+    background-position: right center;
+    background-size: 130% 150% 150%;
+    margin-right: 5px;
 }
 
 .testimonial-2 .avatar {
-    background-image: url('girl.jpeg');
+    background-image: url('images/contact/girl.jpeg');
     background-repeat: no-repeat;
-   background-position: center top;
-   background-size: 150% 150%;
-   margin-right: 15px;
+    background-position: center top;
+    background-size: 150% 150%;
+    margin-right: 15px;
 }
 
 .testimonial-info h3 {
