@@ -19,10 +19,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--navy-gray);
-    color: #fbf2c4; /* Set default font color here */
+    color: #fbf2c4;
+    /* Set default font color here */
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     text-align: center;
 }
 
@@ -147,7 +150,8 @@ h1, h2, h3 {
     border-collapse: collapse;
 }
 
-.pricing-section th, .pricing-section td {
+.pricing-section th,
+.pricing-section td {
     padding: 15px;
     border: 1px solid #2a3e4b;
 }
@@ -196,7 +200,7 @@ h1, h2, h3 {
 
 /* Pricing Table */
 .pricing-table {
-color: #fbf2c4; 
+    color: #fbf2c4;
     flex: 0.5;
     text-align: right;
     margin-left: auto;
@@ -214,7 +218,8 @@ color: #fbf2c4;
     text-align: center;
 }
 
-.pricing-table th, .pricing-table td {
+.pricing-table th,
+.pricing-table td {
     padding: 10px;
     border: 3px solid #dcdfd8;
 }
@@ -237,7 +242,8 @@ color: #fbf2c4;
         align-items: center;
     }
 
-    .care-content, .pricing-table {
+    .care-content,
+    .pricing-table {
         flex: 1;
         width: 100%;
         text-align: center;
@@ -282,6 +288,7 @@ color: #fbf2c4;
     margin: 0 0 30px;
 
 }
+
 /* Individual Bootcamp Variant */
 .bootcamp-variant {
     text-align: center;
@@ -321,7 +328,7 @@ color: #fbf2c4;
     flex-wrap: wrap;
     justify-content: space-between;
     background-color: #020e26;
-    color:#fbf2c4;
+    color: #fbf2c4;
     padding: 20px;
     gap: 0px;
 }
@@ -358,7 +365,8 @@ color: #fbf2c4;
 }
 
 /* Ensure text is on top of the overlay */
-.sports-variant h3, .sports-variant p {
+.sports-variant h3,
+.sports-variant p {
     position: relative;
     z-index: 3;
 }
