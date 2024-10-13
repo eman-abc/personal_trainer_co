@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact us</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="home.html"><img src="logo.png" alt="Business Logo"></a></div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Services
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="yoga.html">Yoga</a>
+                        <a href="bootcamp.html">Bootcamp</a>
+                        <a href="sports-training.html">Sports</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <section class="contact-banner">
+        <div class="banner-message">
+            <h2>Let’s Have a Talk</h2>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info">
+        <h3>Contact Information</h3>
+        <div class="grid-container">
+            <div class="grid-item">
+                <img src="location.png" alt="Visit" class="icon">
+                <h4>Visit</h4>
+                <p>StriveX Wellington 6011,<br> New Zealand</p>
+            </div>
+            <div class="grid-item">
+                <img src="email.png" alt="Email" class="icon">
+                <h4>Email</h4>
+                <p>chris.patterson@trainer.co.nz</p>
+            </div>
+            <div class="grid-item">
+                <img src="phone.png" alt="Phone" class="icon">
+                <h4>Phone</h4>
+                <p>(123) 456-7890</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form">
+        <h3>Send us a message</h3>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonial-container">
+        <div class="testimonial testimonial-1">
+            <div class="testimonial-header">
+                <div class="avatar"></div>
+                <div class="testimonial-info">
+                    <h3>David Ian</h3>
+                    <p>2024-08-10</p>
+                </div>
+            </div>
+            <div class="star-rating">
+                ★★★★★
+            </div>
+            <p class="testimonial-text">
+                Working with Personal Trainer Co. has been a life-changing experience. Their custom fitness programs
+                helped me improve my overall health and strength in just a few months. The trainers are incredibly
+                supportive and always available for advice!
+            </p>
+        </div>
+
+        <div class="testimonial testimonial-2">
+            <div class="testimonial-header">
+                <div class="avatar"></div>
+                <div class="testimonial-info">
+                    <h3>Rosemary</h3>
+                    <p>2024-09-21</p>
+                </div>
+            </div>
+            <div class="star-rating">
+                ★★★★★
+            </div>
+            <p class="testimonial-text">
+                I was struggling with my fitness routine, but after joining Personal Trainer Co., I saw a remarkable
+                transformation. The boot camp sessions were tough but rewarding, and the personalized attention made all
+                the difference. Highly recommend this place!
+            </p>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="newsletter">
+            <h3>Join our Fitness Newsletter</h3>
+            <form class="newsletter-form" action="#" method="post">
+                <input type="email" placeholder="Enter your email" aria-label="Newsletter Signup" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <hr>
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>Services</p>
+                <ul>
+                    <li><a href="#">Personal Training</a></li>
+                    <li><a href="#">Nutrition Plans</a></li>
+                    <li><a href="#">Online Coaching</a></li>
+                    <li><a href="#">Fitness Assessments</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <p>About</p>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Success Stories</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <p>Follow Us</p>
+                <div class="social-icons">
+                    <a href="#"><img src="icons8-facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="icons8-instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="icons8-whatsapp.svg" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <span class="branding">PERSONAL TRAINING</span>
+            <span>STRIVEX</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
