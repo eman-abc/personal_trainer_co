@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StriveX Blog</title>
-    <link rel="stylesheet" href="blogstyling.css"> <!-- External CSS -->
+<link rel="stylesheet" href="services.css">
+<link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="blogstyling.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header>
+ 
            <!-- Navbar -->
         <nav class="navbar">
         <div class="logo"><a href="home.html"><img src="images/logo.png" alt="Business Logo"></a></div>
@@ -31,7 +33,19 @@
             </ul>
         </div>
         </nav>
-    </header>
+
+    <!-- Full-Screen Video Section -->
+    <div class="video-section">
+        <video class="fullscreen-video" autoplay muted loop>
+            <source src="blog-video.mp4" type="video/mp4"> 
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="overlay-text">
+            <h2>Stay up-to-date</h2>
+        </div>
+    </div>
+
 
     <!-- Blog Section -->   
     <section class="blog" id="blog">
@@ -111,12 +125,11 @@
                     <img src="images/blogimage6.webp" alt="">
                     <span class="blog-like"><i class="far fa-heart"></i> </span>
                 </div>
-                <div class="blog-text">
+        <div class="blog-text">
                     <span class="blog-card-meta"> 19 february,2024 By Sarah Davis</span>
                     <h2 class="blog-card-title">Top Nutrition And Fitness Trends In 2024</h2>
                     <a href="https://www.forbes.com/health/wellness/top-nutrition-and-fitness-trends-2024/" class="blog-card-btn">Read More</a>
-                </div>
-            </div>
+                </div>
             <!-- end item -->
         </div>
         </div>
