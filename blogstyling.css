@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 :root {
@@ -20,185 +21,18 @@
     --dark-teal: #248c84;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    font-family: var(--quicksand);
-}
-
-body {
-    line-height: 1.4;
-    color: var(--dark);
-    background-color: #44546c;
-}
-
-img {
-    width: 100%;
-    display: block;
-}
-
-.container {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 1.2rem;
-}
-
-/* Navbar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 30px;
-    background-color: var(--nav-footer);
-    color: white;
-    height: 60px;
-    /* Fixed height for the navbar */
-    position: sticky;
-    /* Make the navbar sticky */
-    top: 0;
-    /* Position it at the top */
-    z-index: 1000;
-    /* Ensure it appears above other content */
-}
-
-/* Logo */
-.navbar .logo img {
-    max-height: 120px;
-    /* Adjust the logo height to fit within the navbar */
-    width: auto;
-    /* Maintain the aspect ratio */
-    object-fit: contain;
-    /* Prevents the logo from stretching */
-    padding-top: 25px;
-    /* Equal padding on all sides */
-    box-sizing: border-box;
-    /* Ensures padding is included in the element's total width/height */
-}
-
-
-.nav-links {
-    list-style: none;
-}
-
-.nav-links li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.3rem;
-
-}
-
-.nav-links a:hover {
-    color: var(--bright-teal);
-}
-
-/* Responsive Styles for Navbar */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-        height: auto;
-        /* Allow navbar to expand */
-    }
-
-    .nav-links {
-        display: block;
-        /* Stack links vertically */
-        width: 100%;
-        /* Full width for nav links */
-        margin-top: 10px;
-    }
-
-    .nav-links li {
-        margin-bottom: 10px;
-        /* Add spacing between stacked links */
-    }
-
-    .nav-links a {
-        font-size: 1.2rem;
-        padding: 10px 0;
-        display: block;
-        /* Make links take full width */
-        text-align: left;
-        padding-left: 20px;
-        /* Align text with some padding */
-    }
-
-    .navbar .logo img {
-        max-height: 80px;
-        /* Adjust logo size for smaller screens */
-    }
-}
-
-/* The dropdown container */
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-    border: none;
-    outline: none;
-    color: white;
-    margin: 0 15px;
-    background-color: inherit;
-    font-family: inherit;
-    font-size: 1.3rem;
-    padding: 5px 0px;
-}
-
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #dcdfd8;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 10px;
-
-
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: var(--nav-footer);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-
-
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    color: var(--bright-teal);
-
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.title{
-    font-size: large;
-    color:#70d0cc;
-    text-align: center;
-}
 /* Blog Section */
 .blog {
-    background: #0B192C;
-    padding: 4.5rem 0;
+    background: #3d6f6d;
+    padding: 10px 10px;
+}
+
+.blog h2 {
+    color: var(--light-gray);
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    margin: 0 0 30px;
 }
 
 .blog-content {
@@ -206,14 +40,16 @@ img {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px; /* Adjust the spacing between blog items */
-    margin: 2rem 0;
+    margin: 10px 40px;
+
 }
 
 .blog-item {
     flex: 1 1 calc(33.333% - 20px); /* 3 items per row with spacing */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.138);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
     margin: 10px; /* Add some margin around each item */
-    background: white;
+    background:#fbf2c4;
+    border-radius: 40px;
 }
 
 .blog-image {
@@ -221,6 +57,8 @@ img {
     width: 100%;
     height: 250px; /* Set a fixed height for the images */
     overflow: hidden; /* Ensure any excess part of the image is hidden */
+	 border-radius: 30px;
+
 }
 
 .blog-image img {
@@ -233,10 +71,10 @@ img {
     position: absolute;
     bottom: 10px;
     right: 10px;
-    background: var(--exdark);
+   
     color: #0B192C;
     font-size: 1.4rem;
-    padding: 0.3rem 0.6rem;
+    padding: 20px, 20px;
 }
 
 .blog-text {
@@ -252,8 +90,9 @@ img {
 .blog-text h2 {
     font-family: var(--playfair);
     padding: 1rem 0;
-    font-size: 1.65rem;
-    font-weight: 500;
+    font-size: 2rem;
+    font-weight: 1000;
+color: #248c84;
 }
 
 .blog-text a {
@@ -272,6 +111,38 @@ img {
     background: var(--dark);
 }
 
+
+/* Style for the blog-item container */
+.blog-item {
+    position: relative; /* This makes the blog-item a reference point for the button positioning */
+}
+
+/* Style for the blog-item container */
+.blog-item {
+    position: relative; /* This makes the blog-item a reference point for the button positioning */
+}
+
+/* Style for the blog-card-btn */
+.blog-item .blog-card-btn {
+    position: absolute; /* Position it absolutely inside the blog-item */
+    bottom: 25px; /* Distance from the bottom of the container */
+    left: 15px; /* Distance from the left of the container */
+    padding: 10px 20px;
+    background-color: var(--dark-blue); /* Teal color */
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.blog-item .blog-card-btn:hover {
+    background-color: var(--bright-teal); /* Darker teal for hover effect */
+}
+
+
 /* Media Queries */
 @media (max-width: 768px) {
     .blog-content {
@@ -279,160 +150,18 @@ img {
         align-items: center;
     }
 
-    .blog-item {
-        width: 100%;
-        margin-bottom: 2rem;
-    }
 
-    .navbar .logo img {
-        max-height: 60px; /* Reduce size further for mobile */
-    }
+
+
 }
 
 @media screen and (min-width: 992px) {
     .blog-content {
+        flex-direction: row;
         grid-template-columns: repeat(3, 1fr);
     }
-}
-
-/* Footer */
-.footer-container {
-    background-color: var(--nav-footer);
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: var(--nav-text);
-}
-
-.newsletter {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: space-between;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-left: 20px;
-}
-
-.newsletter h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-}
-
-.newsletter-form {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
-.newsletter-form input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    margin-right: 10px;
-}
-
-.newsletter-form button {
-    padding: 12px 20px;
-    border: none;
-    background-color: #2e5454; /* Color change */
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.newsletter-form button:hover {
-    background-color: #4cbbb3; /* Color change */
-}
-
-.hr {
-    margin: 20px 0;
-    border: none;
-    border-top: 0.5px solid #2e5454;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    color: var(--nav-text);
-    padding: 10px;
-    padding-left: 30px;
-}
-
-.footer-section {
-    width: 30%;
-    margin-bottom: 20px;
-    margin: 10px;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section p {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-    text-decoration: none;
-    color: var(--light-gray);
-}
-
-.footer-section ul li a:hover {
-    text-decoration: none;
-    color: white;
-}
-
-.social-media .social-icons {
-    display: flex;
-    gap: 10px;
-    color: #8df0e6;
-}
-
-.social-media {
-    align-items: self-end;
-    margin-right: 0px;
-    padding-right: 0px;
-}
-
-.social-media .social-icons img {
-    width: 24px;
-    height: 24px;
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 15px;
-}
-
-.footer-bottom span {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .footer-section {
-        width: 100%;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
+    
+    .blog-item {
+        flex: 1 1 calc(33.333% - 20px); /* Ensuring the items do not span the entire width */
     }
 }
