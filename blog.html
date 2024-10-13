@@ -1,137 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StriveX Blog</title>
-    <link rel="stylesheet" href="blogstyling.css"> <!-- External CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="services.css">
+<link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="blogstyling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-    <header>
-        <!-- Navbar -->
+ 
+           <!-- Navbar -->
         <nav class="navbar">
-            <div class="logo"><a href="home.html"><img src="images/home/logo.png" alt="Business Logo"></a></div>
+        <div class="logo"><a href="home.html"><img src="images/logo.png" alt="Business Logo"></a></div>
             <ul class="nav-links">
-                <li><a href="home.html">Home</a></li>
-                <!-- <li><a href="blog.html">Blog</a></li> -->
-                <li><a href="contact.html">Contact</a></li>
-                <li>
-                    <div class="dropdown">
-                        <button class="dropbtn">Services
-                            <i class="fa fa-caret-down"></i>
-                        </button>
-                        <div class="dropdown-content">
-                            <a href="yoga.html">Yoga</a>
-                            <a href="bootcamp.html">Bootcamp</a>
-                            <a href="sports-training.html">Sports</a>
-                        </div>
+            <li><a href="home.html">Home</a></li> 
+            <!-- <li><a href="blog.html">Blog</a></li> -->
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Services
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="yoga.html">Yoga</a>
+                        <a href="bootcamp.html">Bootcamp</a>
+                        <a href="sports-training.html">Sports</a>
                     </div>
-                </li>
+                </div>
+            </li>
             </ul>
-            </div>
+        </div>
         </nav>
-    </header>
 
-    <!-- Blog Section -->
+    <!-- Full-Screen Video Section -->
+    <div class="video-section">
+        <video class="fullscreen-video" autoplay muted loop>
+            <source src="blog-video.mp4" type="video/mp4"> 
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+        <div class="overlay-text">
+            <h2>Stay up-to-date</h2>
+        </div>
+    </div>
+
+
+    <!-- Blog Section -->   
     <section class="blog" id="blog">
         <div class="container">
             <div class="title">
                 <h2>Latest Blogs</h2>
             </div>
-            <div class="blog-content">
-                <!-- start item -->
-                <div class="blog-item">
-                    <div class="blog-image">
-                        <img src="images/blogimage1.jpeg" alt="the mental health">
-                        <span class="blog-like"><i class="far fa-heart"></i> </span>
-                    </div>
-                    <div class="blog-text">
-                        <span class="blog-card-meta"> 28 february,2022 By Lawrence Robinson</span>
-                        <h2 class="blog-card-title">The Mental Health Benefits of Exercise</h2>
-                        <a href="https://carrotsncake.com/6-best-exercises-for-women-in-their-30s-and-40s/"
-                            class="blog-card-btn">Read More</a>
-                    </div>
+        <div class="blog-content">
+            <!-- start item -->
+            <div  class="blog-item">
+                <div class="blog-image">
+                    <img src="images/blogimage1.jpeg" alt="the mental health">
+                    <span class="blog-like"><i class="far fa-heart"></i> </span>
                 </div>
-                <!-- end item -->
-                <!-- start item -->
-                <div class="blog-item">
-                    <div class="blog-image">
-                        <img src="images/blogimage2.jpg" alt="">
-                        <span class="blog-like"><i class="far fa-heart"></i> </span>
-                    </div>
-                    <div class="blog-text">
-                        <span class="blog-card-meta"> 07 january,2023 By Mary L. Gavin</span>
-                        <h2 class="blog-card-title">Why Exercise Is Wise for teens</h2>
-                        <a href="https://kidshealth.org/en/teens/exercise-wise.html" class="blog-card-btn">Read More</a>
-                    </div>
+                <div class="blog-text">
+                    <span class="blog-card-meta"> 28 february,2022 By Lawrence Robinson</span>
+                    <h2 class="blog-card-title">The Mental Health Benefits of Exercise</h2>
+                    <a href="https://carrotsncake.com/6-best-exercises-for-women-in-their-30s-and-40s/" class="blog-card-btn">Read More</a>
                 </div>
-                <!-- end item -->
-                <!-- start item -->
-                <div class="blog-item">
-                    <div class="blog-image">
-                        <img src="images/blogimage3.jpg" alt="">
-                        <span class="blog-like"><i class="far fa-heart"></i> </span>
-                    </div>
-                    <div class="blog-text">
-                        <span class="blog-card-meta"> 26 august,2023 By MayoClinic staff</span>
-                        <h2 class="blog-card-title">Exercise: 7 benefits of regular physical activity</h2>
-                        <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20048389"
-                            class="blog-card-btn">Read More</a>
-                    </div>
-                </div>
-                <!-- end item -->
-                <!-- start item -->
-                <div class="blog-item">
-                    <div class="blog-image">
-                        <img src="images/blogimage4.jpg" alt="">
-                        <span class="blog-like"><i class="far fa-heart"></i> </span>
-                    </div>
-                    <div class="blog-text">
-                        <span class="blog-card-meta"> 03 august,2022 By MayoClinic staff</span>
-                        <h2 class="blog-card-title">Get moving to manage stress</h2>
-                        <a href="https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/exercise-and-stress/art-20044469"
-                            class="blog-card-btn">Read More</a>
-                    </div>
-                </div>
-                <!-- end item -->
-                <!-- start item -->
-                <div class="blog-item">
-                    <div class="blog-image">
-                        <img src="images/blogimage5.jpg" alt="">
-                        <span class="blog-like"><i class="far fa-heart"></i> </span>
-                    </div>
-                    <div class="blog-text">
-                        <span class="blog-card-meta"> 04 january,2024 By Madeline Holcombe, CNN</span>
-                        <h2 class="blog-card-title">Getting regular exercise in 2024 </h2>
-                        <a href="https://www.cnn.com/2024/01/04/health/fitness-2024-resolutions-wellness/index.html"
-                            class="blog-card-btn">Read More</a>
-                    </div>
-                </div>
-                <!-- end item -->
-                <!-- start item -->
-                <div class="blog-item">
-                    <div class="blog-image">
-                        <img src="images/blogimage6.webp" alt="">
-                        <span class="blog-like"><i class="far fa-heart"></i> </span>
-                    </div>
-                    <div class="blog-text">
-                        <span class="blog-card-meta"> 19 february,2024 By Sarah Davis</span>
-                        <h2 class="blog-card-title">Top Nutrition And Fitness Trends In 2024</h2>
-                        <a href="https://www.forbes.com/health/wellness/top-nutrition-and-fitness-trends-2024/"
-                            class="blog-card-btn">Read More</a>
-                    </div>
-                </div>
-                <!-- end item -->
             </div>
+            <!-- end item -->
+              <!-- start item -->
+            <div  class="blog-item">
+                <div class="blog-image">
+                    <img src="images/blogimage2.jpg" alt="">
+                    <span class="blog-like"><i class="far fa-heart"></i> </span>
+                </div>
+                <div class="blog-text">
+                    <span class="blog-card-meta"> 07 january,2023 By Mary L. Gavin</span>
+                    <h2 class="blog-card-title">Why Exercise Is Wise for teens</h2>
+                    <a href="https://kidshealth.org/en/teens/exercise-wise.html" class="blog-card-btn">Read More</a>
+                </div>
+            </div>
+            <!-- end item -->
+              <!-- start item -->
+            <div  class="blog-item">
+                <div class="blog-image">
+                    <img src="images/blogimage3.jpg" alt="">
+                    <span class="blog-like"><i class="far fa-heart"></i> </span>
+                </div>
+                <div class="blog-text">
+                    <span class="blog-card-meta"> 26 august,2023 By MayoClinic staff</span>
+                    <h2 class="blog-card-title">Exercise: 7 benefits of regular physical activity</h2>
+                    <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20048389" class="blog-card-btn">Read More</a>
+                </div>
+            </div>
+            <!-- end item -->
+              <!-- start item -->
+            <div  class="blog-item">
+                <div class="blog-image">
+                    <img src="images/blogimage4.jpg" alt="">
+                    <span class="blog-like"><i class="far fa-heart"></i> </span>
+                </div>
+                <div class="blog-text">
+                    <span class="blog-card-meta"> 03 august,2022 By MayoClinic staff</span>
+                    <h2 class="blog-card-title">Get moving to manage stress</h2>
+                    <a href="https://www.mayoclinic.org/healthy-lifestyle/stress-management/in-depth/exercise-and-stress/art-20044469" class="blog-card-btn">Read More</a>
+                </div>
+            </div>
+            <!-- end item -->
+              <!-- start item -->
+            <div  class="blog-item">
+                <div class="blog-image">
+                    <img src="images/blogimage5.jpg" alt="">
+                    <span class="blog-like"><i class="far fa-heart"></i> </span>
+                </div>
+                <div class="blog-text">
+                    <span class="blog-card-meta"> 04 january,2024 By Madeline Holcombe, CNN</span>
+                    <h2 class="blog-card-title">Getting regular exercise in 2024 </h2>
+                    <a href="https://www.cnn.com/2024/01/04/health/fitness-2024-resolutions-wellness/index.html" class="blog-card-btn">Read More</a>
+                </div>
+            </div>
+            <!-- end item -->
+              <!-- start item -->
+            <div  class="blog-item">
+                <div class="blog-image">
+                    <img src="images/blogimage6.webp" alt="">
+                    <span class="blog-like"><i class="far fa-heart"></i> </span>
+                </div>
+        <div class="blog-text">
+                    <span class="blog-card-meta"> 19 february,2024 By Sarah Davis</span>
+                    <h2 class="blog-card-title">Top Nutrition And Fitness Trends In 2024</h2>
+                    <a href="https://www.forbes.com/health/wellness/top-nutrition-and-fitness-trends-2024/" class="blog-card-btn">Read More</a>
+                </div>
+            <!-- end item -->
+        </div>
         </div>
     </section>
     <!-- end of blog -->
-    <footer class="footer-container">
+      <footer class="footer-container">
         <div class="newsletter">
             <h3>Join our Fitness Newsletter</h3>
             <form class="newsletter-form" action="#" method="post">
@@ -162,9 +166,9 @@
             <div class="footer-section social-media">
                 <p>Follow Us</p>
                 <div class="social-icons">
-                    <a href="#"><img src="images/home/icons8-facebook.svg" alt="Facebook"></a>
-                    <a href="#"><img src="images/home/icons8-instagram.svg" alt="Instagram"></a>
-                    <a href="#"><img src="images/home/icons8-whatsapp.svg" alt="YouTube"></a>
+                    <a href="#"><img src="images/icons8-facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/icons8-instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="images/icons8-whatsapp.svg" alt="YouTube"></a>
                 </div>
             </div>
         </div>
@@ -175,5 +179,4 @@
         </div>
     </footer>
 </body>
-
 </html>
