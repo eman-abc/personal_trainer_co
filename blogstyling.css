@@ -43,6 +43,7 @@ img {
     padding: 0 1.2rem;
 }
 
+/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -51,18 +52,29 @@ img {
     background-color: var(--nav-footer);
     color: white;
     height: 60px;
+    /* Fixed height for the navbar */
     position: sticky;
+    /* Make the navbar sticky */
     top: 0;
+    /* Position it at the top */
     z-index: 1000;
+    /* Ensure it appears above other content */
 }
 
 /* Logo */
 .navbar .logo img {
     max-height: 120px;
+    /* Adjust the logo height to fit within the navbar */
     width: auto;
+    /* Maintain the aspect ratio */
     object-fit: contain;
+    /* Prevents the logo from stretching */
     padding-top: 25px;
+    /* Equal padding on all sides */
+    box-sizing: border-box;
+    /* Ensures padding is included in the element's total width/height */
 }
+
 
 .nav-links {
     list-style: none;
@@ -77,6 +89,7 @@ img {
     color: white;
     text-decoration: none;
     font-size: 1.3rem;
+
 }
 
 .nav-links a:hover {
@@ -90,28 +103,35 @@ img {
         align-items: flex-start;
         padding: 20px;
         height: auto;
+        /* Allow navbar to expand */
     }
 
     .nav-links {
         display: block;
+        /* Stack links vertically */
         width: 100%;
+        /* Full width for nav links */
         margin-top: 10px;
     }
 
     .nav-links li {
         margin-bottom: 10px;
+        /* Add spacing between stacked links */
     }
 
     .nav-links a {
         font-size: 1.2rem;
         padding: 10px 0;
         display: block;
+        /* Make links take full width */
         text-align: left;
         padding-left: 20px;
+        /* Align text with some padding */
     }
 
     .navbar .logo img {
         max-height: 80px;
+        /* Adjust logo size for smaller screens */
     }
 }
 
@@ -361,4 +381,3 @@ img {
         text-align: center;
     }
 }
-
