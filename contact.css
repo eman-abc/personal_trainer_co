@@ -100,9 +100,9 @@ body {
 }
 
 .grid-item p:hover {
-    font-size: 1.3rem;  /* Enlarge the text */
+    font-size: 1.25rem;  /* Enlarge the text */
     color: #071c3b;     /* Change color to light greenish */
-    transition: font-size 0.2s ease, color 0.2s ease; /* Smooth transition */
+    transition: font-size 0.4s ease, color 0.1s ease; /* Smooth transition */
 }
 
 .grid-item p {
@@ -124,11 +124,11 @@ body {
         font-size: 24px; /* Smaller font size for the header */
     }
     h4 {
-        font-size: 18px; /* Smaller font size for subheaders */
+        font-size: 14px; /* Smaller font size for subheaders */
     }
     p {
-        font-size: 14px; /* Smaller text in paragraphs */
-        word-wrap: break-word; /* Prevent text from exceeding container */
+        font-size: 8px; /* Smaller text in paragraphs */
+       
     }
 }
 
@@ -146,7 +146,7 @@ body {
         font-size: 16px; /* Even smaller font size for subheaders */
     }
     p {
-        font-size: 12px; /* Even smaller text in paragraphs */
+        font-size: 8px; /* Even smaller text in paragraphs */
     }
 }
 
