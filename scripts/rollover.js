@@ -34,20 +34,11 @@ window.onload = function () {
     "images/service images/sports/runningHover.jpg",
     "images/service images/sports/running.jpg"
   );
-
-  addRolloverEffect(
-    "trainerImage",
-    "images/Rollover images/RebaSmith-Rollover.jpg",
-    "images/service images/yoga/RebaSmith.jpg"
-  );
-
- 
   addRolloverEffect(
     "triathlonImage",
     "images/service images/sports/triathlonHover.jpg",
     "images/service images/sports/triathlon.jpg"
   );
-
   addRolloverEffect(
     "volleyballImage",
     "images/service images/sports/volleyballHover.jpg",
