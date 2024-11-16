@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StriveX Blog: Mental Health Benefits of Exercise</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="blogstyling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --main-bg: #3d6f6d;
+            --content-bg: #fbf2c4;
+            --text-dark: #2b2b2b;
+            --text-light: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--main-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .content-container, .comment-section {
+            background-color: var(--content-bg);
+            padding: 15px;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-container h1 {
+            font-size: 1.5rem;
+        }
+
+        .comment-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .comment-form input, 
+        .comment-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .comment-form button {
+            padding: 10px;
+            font-size: 0.9rem;
+            background-color: var(--main-bg);
+            color: var(--text-light);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .comment-form button:hover {
+            background-color: #2b5e5c;
+        }
+
+        /* Media Queries for larger screens */
+        @media (min-width: 768px) {
+            .content-container, .comment-section {
+                max-width: 700px;
+                padding: 20px;
+            }
+
+            .content-container h1 {
+                font-size: 2rem;
+            }
+
+            .comment-section h3 {
+                font-size: 1.5rem;
+            }
+
+            .comment-form input, 
+            .comment-form textarea {
+                font-size: 1rem;
+            }
+
+            .comment-form button {
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .content-container, .comment-section {
+                max-width: 900px;
+                padding: 30px;
+            }
+
+            .content-container h1 {
+                font-size: 2.5rem;
+            }
+
+            .comment-section h3 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="home.html"><img src="images/home/logo.png" alt="Business Logo"></a></div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Services
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="yoga.html">Yoga</a>
+                        <a href="bootcamp.html">Bootcamp</a>
+                        <a href="sports-training.html">Sports</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <h1>The Mental Health Benefits of Exercise</h1>
+        <p><strong>Date:</strong> February 28, 2022</p>
+        <p><strong>Author:</strong> Lawrence Robinson</p>
+        <img src="images/blogimage1.jpeg" alt="The Mental Health Benefits of Exercise" style="width:100%; border-radius: 10px; margin: 20px 0;">
+        <p>Engaging in regular physical exercise has been proven to not only improve your physical health but also offer significant mental health benefits. Exercise can help reduce anxiety, combat depression, and improve self-esteem.</p>
+        <p>For women in their 30s and 40s, incorporating activities such as yoga, strength training, and aerobic exercises can enhance overall well-being and mental clarity. These exercises not only improve strength and endurance but also stimulate endorphins, the feel-good chemicals in the brain.</p>
+        <p><strong>Quick Tip:</strong> Start with 30-minute sessions, 3 times a week, and gradually increase intensity.</p>
+        <p>Explore our <a href="services.html">services page</a> to find personalized fitness plans that suit your needs.</p>
+        <a href="blog.html" style="display: inline-block; margin-top: 20px;">&larr; Back to Blog</a>
+    </div>
+
+    <div class="content-container comment-section">
+        <h2>Comments</h2>
+        <form class="comment-form">
+            <input type="text" placeholder="Your Name" required>
+            <textarea rows="5" placeholder="Your Comment" required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+        <ul class="comments-list">
+            <li>
+                <h4>John Doe</h4>
+                <p>This article was really insightful! Thanks for sharing.</p>
+            </li>
+            <li>
+                <h4>Jane Smith</h4>
+                <p>Exercise has helped me so much with managing stress. Great tips!</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <hr>
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>Services</p>
+                <ul>
+                    <li><a href="#">Personal Training</a></li>
+                    <li><a href="#">Nutrition Plans</a></li>
+                    <li><a href="#">Online Coaching</a></li>
+                    <li><a href="#">Fitness Assessments</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <p>Follow Us</p>
+                <div class="social-icons">
+                    <a href="#"><img src="images/home/icons8-facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/home/icons8-instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="images/home/icons8-whatsapp.svg" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <span>© 2024 StriveX</span>
+        </div>
+    </footer>
+</body>
+</html>

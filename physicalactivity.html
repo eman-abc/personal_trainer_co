@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StriveX Blog: Importance of Physical Activity</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="blogstyling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        :root {
+            --main-bg: #3d6f6d;
+            --content-bg: #fbf2c4;
+            --text-dark: #2b2b2b;
+            --text-light: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--main-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .content-container, .comment-section {
+            background-color: var(--content-bg);
+            padding: 15px;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-container h1 {
+            font-size: 1.5rem;
+        }
+
+        .comment-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .comment-form input, 
+        .comment-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .comment-form button {
+            padding: 10px;
+            font-size: 0.9rem;
+            background-color: var(--main-bg);
+            color: var(--text-light);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .comment-form button:hover {
+            background-color: #2b5e5c;
+        }
+
+        @media (min-width: 768px) {
+            .content-container, .comment-section {
+                max-width: 700px;
+                padding: 20px;
+            }
+
+            .content-container h1 {
+                font-size: 2rem;
+            }
+
+            .comment-section h3 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .content-container, .comment-section {
+                max-width: 900px;
+                padding: 30px;
+            }
+
+            .content-container h1 {
+                font-size: 2.5rem;
+            }
+
+            .comment-section h3 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="home.html"><img src="images/home/logo.png" alt="Business Logo"></a></div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Services
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="yoga.html">Yoga</a>
+                        <a href="bootcamp.html">Bootcamp</a>
+                        <a href="sports-training.html">Sports</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <h1>The Importance of Physical Activity</h1>
+        <p><strong>Date:</strong> March 1, 2024</p>
+        <p><strong>Author:</strong> Mayo Clinic Staff</p>
+        <img src="images/blogimage3.jpg" alt="Physical Activity" style="width:100%; border-radius: 10px; margin: 20px 0;">
+        <p>Regular physical activity is essential for maintaining overall health and wellness. Engaging in exercises like walking, jogging, swimming, or yoga not only improves your physical health but also enhances mental well-being.</p>
+        <p>Physical activity reduces the risk of chronic diseases, helps manage weight, and improves sleep. It's recommended that adults aim for at least 150 minutes of moderate aerobic activity each week.</p>
+        <p><strong>Tip:</strong> Start small by incorporating short walks into your daily routine, and gradually increase the intensity and duration.</p>
+        <p>Check out our <a href="services.html">services</a> to explore personalized fitness programs tailored to your goals.</p>
+        <a href="blog.html" style="display: inline-block; margin-top: 20px;">&larr; Back to Blog</a>
+    </div>
+
+    <div class="content-container comment-section">
+        <h2>Comments</h2>
+        <form class="comment-form">
+            <input type="text" placeholder="Your Name" required>
+            <textarea rows="5" placeholder="Your Comment" required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+        <ul class="comments-list">
+            <li>
+                <h4>Emily White</h4>
+                <p>This was so informative! I never realized how impactful short exercises can be.</p>
+            </li>
+            <li>
+                <h4>Mike Green</h4>
+                <p>Great read! I’ve started incorporating 15-minute stretches, and it’s made a huge difference.</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <hr>
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>Services</p>
+                <ul>
+                    <li><a href="#">Personal Training</a></li>
+                    <li><a href="#">Nutrition Plans</a></li>
+                    <li><a href="#">Online Coaching</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <p>Follow Us</p>
+                <div class="social-icons">
+                    <a href="#"><img src="images/home/icons8-facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/home/icons8-instagram.svg" alt="Instagram"></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <span>© 2024 StriveX</span>
+        </div>
+    </footer>
+</body>
+</html>

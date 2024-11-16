@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StriveX Blog: Fitness Resolutions for 2024</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="blogstyling.css">
+    <style>
+        :root {
+            --main-bg: #3d6f6d;
+            --content-bg: #fbf2c4;
+            --text-dark: #2b2b2b;
+            --text-light: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--main-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .content-container, .comment-section {
+            background-color: var(--content-bg);
+            padding: 15px;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .content-container h1 {
+            font-size: 1.5rem;
+        }
+
+        .comment-section h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .comment-form input, 
+        .comment-form textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+
+        .comment-form button {
+            padding: 10px;
+            font-size: 0.9rem;
+            background-color: var(--main-bg);
+            color: var(--text-light);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .comment-form button:hover {
+            background-color: #2b5e5c;
+        }
+
+        /* Media Queries for larger screens */
+        @media (min-width: 768px) {
+            .content-container, .comment-section {
+                max-width: 700px;
+                padding: 20px;
+            }
+
+            .content-container h1 {
+                font-size: 2rem;
+            }
+
+            .comment-section h3 {
+                font-size: 1.5rem;
+            }
+
+            .comment-form input, 
+            .comment-form textarea {
+                font-size: 1rem;
+            }
+
+            .comment-form button {
+                font-size: 1rem;
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .content-container, .comment-section {
+                max-width: 900px;
+                padding: 30px;
+            }
+
+            .content-container h1 {
+                font-size: 2.5rem;
+            }
+
+            .comment-section h3 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo"><a href="home.html"><img src="images/home/logo.png" alt="Business Logo"></a></div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li>
+                <div class="dropdown">
+                    <button class="dropbtn">Services
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="yoga.html">Yoga</a>
+                        <a href="bootcamp.html">Bootcamp</a>
+                        <a href="sports-training.html">Sports</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="content-container">
+        <h1>Fitness Resolutions for 2024: A Path to Wellness</h1>
+        <p><strong>Date:</strong> January 4, 2024</p>
+        <p><strong>Author:</strong> CNN Health Team</p>
+        <img src="images/blogimage5.jpg" alt="Fitness Resolutions for 2024" style="width:100%; border-radius: 10px; margin: 20px 0;">
+        <p>The new year is a perfect time to set fitness goals and work towards a healthier lifestyle. Whether you're looking to lose weight, gain strength, or improve overall well-being, setting realistic resolutions can make a world of difference.</p>
+        <p>Experts suggest starting small with achievable goals like walking for 20 minutes daily or incorporating strength training twice a week. These small changes build habits that lead to long-term health benefits.</p>
+        <p>Consistency and accountability are key. Partnering with a friend, joining a fitness group, or hiring a personal trainer can provide the motivation you need to stick with your goals.</p>
+        <p><strong>Did You Know?</strong> Studies show that people who write down their fitness goals are 42% more likely to achieve them!</p>
+        <p>At StriveX, we're here to help. Explore our <a href="services.html">services</a> for personalized training and nutrition plans tailored to your fitness journey.</p>
+        <a href="blog.html" style="display: inline-block; margin-top: 20px;">&larr; Back to Blog</a>
+    </div>
+
+    <div class="content-container comment-section">
+        <h3>Comments</h3>
+        <form class="comment-form">
+            <input type="text" placeholder="Your Name" required>
+            <textarea rows="5" placeholder="Your Comment" required></textarea>
+            <button type="submit">Post Comment</button>
+        </form>
+        <ul class="comments-list">
+            <li>
+                <h4>Michael Green</h4>
+                <p>Setting smaller goals has been a game-changer for me. Thanks for the tips!</p>
+            </li>
+            <li>
+                <h4>Sophia Clark</h4>
+                <p>I can't wait to explore the services at StriveX to help me stay consistent in 2024!</p>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer-container">
+        <div class="newsletter">
+            <h3>Join our Fitness Newsletter</h3>
+            <form class="newsletter-form" action="#" method="post">
+                <input type="email" placeholder="Enter your email" aria-label="Newsletter Signup" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+        <hr>
+        <div class="footer-content">
+            <div class="footer-section">
+                <p>Services</p>
+                <ul>
+                    <li><a href="#">Personal Training</a></li>
+                    <li><a href="#">Nutrition Plans</a></li>
+                    <li><a href="#">Online Coaching</a></li>
+                    <li><a href="#">Fitness Assessments</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <p>About</p>
+                <ul>
+                    <li><a href="#">About Me</a></li>
+                    <li><a href="#">Success Stories</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <p>Follow Us</p>
+                <div class="social-icons">
+                    <a href="#"><img src="images/home/icons8-facebook.svg" alt="Facebook"></a>
+                    <a href="#"><img src="images/home/icons8-instagram.svg" alt="Instagram"></a>
+                    <a href="#"><img src="images/home/icons8-whatsapp.svg" alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <span class="branding">PERSONAL TRAINING</span>
+            <span>STRIVEX</span>
+        </div>
+    </footer>
+</body>
+</html>
