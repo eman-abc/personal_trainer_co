@@ -158,13 +158,14 @@ h3 {
 
 .care-pricing-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     padding: 40px;
-    align-items: flex-start;
     background-image: url(images/service%20images/blue-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    gap: 20px; /* Add spacing between elements */
 }
 
 /* Care Content */
@@ -203,7 +204,11 @@ h3 {
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    align-self: center;
 }
+
+
+
 
 .action-buttons button {
     background-color: white;
@@ -227,9 +232,10 @@ h3 {
 .pricing-table {
     color: #fbf2c4;
     flex: 0.5;
-    text-align: right;
-    margin-left: auto;
+    text-align: center;
+    margin: 0 auto;
 }
+
 
 .pricing-table h2 {
     font-size: 1.5rem;
