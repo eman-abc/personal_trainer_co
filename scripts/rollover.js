@@ -91,22 +91,22 @@ window.onload = function () {
   );
 
   addRolloverEffect(
-    "bootcampServiceCard", // Match this ID
+    "bootcamp-image", // Match this ID
     "images/home/bootcamp-services-hover.jpg", // Ensure this image path is correct
     "images/home/bootcamp-services.jpeg" // Ensure this image path is correct
   );
-  
+
 
   addRolloverEffect(
-    "yogaServiceCard", // for yoga img hover
-    "images/home/yoga_services-hover.jpg", // Ensure this image path is correct
+    "yoga-image", // for yoga img hover
+    "images/home/yoga_services_hover.jpg", // Ensure this image path is correct
     "images/home/yoga_services.jpg" // Ensure this image path is correct
   );
 
 
   addRolloverEffect(
-    "SportsServiceCard", // for basketball img hover
-    "images/home/Basketball-hover.jpg", // Ensure this image path is correct
+    "basketball-image", // for basketball img hover
+    "images/home/Basketball_hover.jpg", // Ensure this image path is correct
     "images/home/Basketball.jpeg" // Ensure this image path is correct
   );
 
