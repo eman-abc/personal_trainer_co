@@ -21,14 +21,17 @@
     --dark-teal: #248c84;
 }
 
-
+body{
+    overflow-x: hidden;
+    width: 100vw;
+}
 
 /* Blog Section */
 .blog {
 
     overflow-x: hidden;
-    width:fit-content;
     background: #3d6f6d;
+    width: 100vw;
   
 }
 
