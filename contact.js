@@ -376,5 +376,5 @@ function removeError(fieldId) {
     const errorElement = document.getElementById(fieldId + '-error');
     if (errorElement) {
         errorElement.remove();
-    }
+    }
 }

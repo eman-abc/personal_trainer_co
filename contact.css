@@ -13,6 +13,7 @@ body {
     box-sizing: border-box;
 }
 
+
 /* Banner Styles */
 .contact-banner {
     position: relative;
@@ -78,6 +79,7 @@ body {
     width: 80%;
     margin: 0 auto;  /* Center the grid */
     padding-left: 0;  /* Adjust padding */
+    padding-right: 20px;
 
 }
 
@@ -253,8 +255,8 @@ textarea#message {
 /* Testimonial Styles */
 .testimonial-container {
     width: 32%; /* Adjust width as needed */
-    margin-left: 850px; /* Aligns container to the right */
-    margin-right: 20px; /* Space between contact form and testimonials */
+    margin-left: 800px; /* Aligns container to the right */
+    margin-right: 40px; /* Space between contact form and testimonials */
     position: relative; /* Allow positioning of child elements */
     top: -600px; /* Adjust this value to move the container up */
 }
