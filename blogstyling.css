@@ -21,10 +21,15 @@
     --dark-teal: #248c84;
 }
 
+
+
 /* Blog Section */
 .blog {
+
+    overflow-x: hidden;
+    width:fit-content;
     background: #3d6f6d;
-    padding: 10px 10px;
+  
 }
 
 .blog h2 {
