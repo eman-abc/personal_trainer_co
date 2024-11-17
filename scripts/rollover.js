@@ -68,14 +68,14 @@ window.onload = function () {
 
   addRolloverEffect(
     "blogImage3",
-    "'images/blogimage3hover.jpg",
+    "images/blogimage3hover.jpg",
     "images/blogimage3.jpg"
   );
 
   addRolloverEffect(
     "blogImage4",
     "images/blogimage4hover.jpg",
-    "images/blogimage1.jpeg"
+    "images/blogimage4.jpg"
   );
 
   addRolloverEffect(
