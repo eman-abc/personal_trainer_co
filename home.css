@@ -29,6 +29,8 @@ body {
     background-color: var(--light-gray);
     color: var(--dark-blue);
     line-height: 1.6;
+    overflow-x: hidden;
+    width:fit-content;
 }
 
 /* Root Variables */
@@ -40,6 +42,7 @@ body {
 
 /* Navbar Styles */
 .navbar {
+    
     background-color: var(--nav-footer);
     padding: 15px 30px;
     color: var(--nav-text);
@@ -76,6 +79,7 @@ body {
     /* Rounded corners */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     /* Subtle shadow */
+    overflow-x: hidden;
 }
 
 .dropdown-menu a {

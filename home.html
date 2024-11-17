@@ -80,6 +80,57 @@
     </section>
 
 
+
+
+
+    <!-- Services Section -->
+    <section class="services position-relative">
+        <div class="position-relative header-container mb-0">
+            <h2>Our Services</h2>
+            <!-- Action Buttons for Text Style Change -->
+            <div class="button-container">
+                <div class="d-flex flex-column align-items-center">
+                    <button id="change-text-style" class="btn btn-primary btn-sm mb-1"
+                        onclick="changeTextStyle()">Change Text Style</button>
+                    <button id="reset-text-style" class="btn btn-secondary btn-sm mb-0" onclick="resetTextStyle()">Reset
+                        Text
+                        Style</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="service-cards mt-0">
+            <div class="service-card">
+                <img id="yoga-image" src="images/home/yoga_services.jpg" alt="Yoga Services" class="service-image"
+                    onmouseover="changeImage(this, 'images/home/yoga_services_hover.jpg')"
+                    onmouseout="resetImage(this, 'images/home/yoga_services.jpg')">
+                <h3>Yoga</h3>
+                <p class="service-description">Find balance and flexibility with our expert-led yoga classes, designed
+                    for all skill levels.</p>
+                <a href="#" class="explore-button">Explore</a>
+            </div>
+            <div class="service-card">
+                <img id="bootcamp-image" src="images/home/bootcamp-services.jpeg" alt="Bootcamp Services"
+                    class="service-image" onmouseover="changeImage(this, 'images/home/bootcamp-services-hover.jpg')"
+                    onmouseout="resetImage(this, 'images/home/bootcamp-services.jpeg')">
+                <h3>Bootcamp</h3>
+                <p class="service-description">Challenge yourself with our intense bootcamp workouts, designed to push
+                    your limits and build strength.</p>
+                <a href="#" class="explore-button">Explore</a>
+            </div>
+            <div class="service-card">
+                <img id="basketball-image" src="images/home/Basketball.jpeg" alt="Basketball Services"
+                    class="service-image" onmouseover="changeImage(this, 'images/home/Basketball_hover.jpg')"
+                    onmouseout="resetImage(this, 'images/home/Basketball.jpeg')">
+                <h3>Sports Training</h3>
+                <p class="service-description">Elevate your athletic performance with personalized sports training,
+                    tailored to your goals.</p>
+                <a href="#" class="explore-button">Explore</a>
+            </div>
+        </div>
+    </section>
+
+
     <section id="details" class="details-section container-fluid py-5 text-center">
         <h2 class="mb-4 fw-bold">What Sets Us Apart</h2>
         <p id="details-text" class="d-none fs-5 text-muted">
@@ -144,57 +195,6 @@
         </div>
 
     </section>
-
-
-    <!-- Services Section -->
-    <section class="services position-relative">
-        <div class="position-relative header-container mb-0">
-            <h2>Our Services</h2>
-            <!-- Action Buttons for Text Style Change -->
-            <div class="button-container">
-                <div class="d-flex flex-column align-items-center">
-                    <button id="change-text-style" class="btn btn-primary btn-sm mb-1"
-                        onclick="changeTextStyle()">Change Text Style</button>
-                    <button id="reset-text-style" class="btn btn-secondary btn-sm mb-0" onclick="resetTextStyle()">Reset
-                        Text
-                        Style</button>
-                </div>
-            </div>
-        </div>
-
-        <div class="service-cards mt-0">
-            <div class="service-card">
-                <img id="yoga-image" src="images/home/yoga_services.jpg" alt="Yoga Services" class="service-image"
-                    onmouseover="changeImage(this, 'images/home/yoga_services_hover.jpg')"
-                    onmouseout="resetImage(this, 'images/home/yoga_services.jpg')">
-                <h3>Yoga</h3>
-                <p class="service-description">Find balance and flexibility with our expert-led yoga classes, designed
-                    for all skill levels.</p>
-                <a href="#" class="explore-button">Explore</a>
-            </div>
-            <div class="service-card">
-                <img id="bootcamp-image" src="images/home/bootcamp-services.jpeg" alt="Bootcamp Services"
-                    class="service-image" onmouseover="changeImage(this, 'images/home/bootcamp-services-hover.jpg')"
-                    onmouseout="resetImage(this, 'images/home/bootcamp-services.jpeg')">
-                <h3>Bootcamp</h3>
-                <p class="service-description">Challenge yourself with our intense bootcamp workouts, designed to push
-                    your limits and build strength.</p>
-                <a href="#" class="explore-button">Explore</a>
-            </div>
-            <div class="service-card">
-                <img id="basketball-image" src="images/home/Basketball.jpeg" alt="Basketball Services"
-                    class="service-image" onmouseover="changeImage(this, 'images/home/Basketball_hover.jpg')"
-                    onmouseout="resetImage(this, 'images/home/Basketball.jpeg')">
-                <h3>Sports Training</h3>
-                <p class="service-description">Elevate your athletic performance with personalized sports training,
-                    tailored to your goals.</p>
-                <a href="#" class="explore-button">Explore</a>
-            </div>
-        </div>
-    </section>
-
-
-
 
 
     <!-- Footer -->

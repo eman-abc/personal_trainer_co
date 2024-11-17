@@ -1,21 +1,30 @@
 // task 1
 // details section
 function showDetails() {
+    const hideBtn = document.getElementById('hide-details');
+    hideBtn.classList.remove('d-none');
     const detailsText = document.getElementById('details-text');
     const featureIcons = document.getElementById('feature-icons');
     const statistics = document.getElementById('statistics');
+    const showBtn = document.getElementById('show-details');
+    
     detailsText.classList.remove('d-none');
     featureIcons.classList.remove('d-none');
     statistics.classList.remove('d-none');
+    showBtn.classList.add('d-none');
 }
 
 function hideDetails() {
+    const showBtn = document.getElementById('show-details');
+    showBtn.classList.remove('d-none');
+    const hideBtn = document.getElementById('hide-details');
     const detailsText = document.getElementById('details-text');
     const featureIcons = document.getElementById('feature-icons');
     const statistics = document.getElementById('statistics');
     detailsText.classList.add('d-none');
     featureIcons.classList.add('d-none');
     statistics.classList.add('d-none');
+    hideBtn.classList.add('d-none');
 }
 
 
