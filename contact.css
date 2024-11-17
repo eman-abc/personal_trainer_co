@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     background-image: url('2.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 36%; 
+    background-size: 100% 35%; 
     background-position: center top;
     background-attachment: scroll;
     background-color: var(--dark-teal);
@@ -47,8 +47,6 @@ body {
     }
 }
 
-
-
 /* Contact Information Styles */
 .contact-info {
     text-align: center;
@@ -60,7 +58,7 @@ body {
 
 .contact-info h3 {
     margin-bottom: -8px;
-    margin-top: 0;
+    margin-top: 50px;
     padding:35px;
     color: #ffffff;
     font-size: 30px;
@@ -177,7 +175,7 @@ body {
     margin: 20px auto; /* Center the form section */
     width: 70%; /* Width of the form */
     max-width: 600px; /* Maximum width */
-    margin-top: 50px; /*moving down if no inc*/
+    margin-top: 0px; /*moving down if no inc*/
     margin-left:60px;
     text-align: center;
 }
@@ -201,6 +199,7 @@ body {
 
 .contact-form label {
     display: block; /* Block display for labels */
+   text-align:left;
     margin: 10px 0 5px; /* Margins for spacing */
 }
 
@@ -210,8 +209,17 @@ body {
     margin-bottom: 15px; /* Space below inputs */
     border-radius: 5px; /* Rounded corners */
     border: 1px solid #ccc; /* Border color */
+    margin-bottom: 20px;
     background-color: #c9cfc7; /* Light background */
 }
+
+textarea#message {
+    width: 100%; /* Adjust this value as needed (e.g., 80% for 80% of the container width) */
+    height: 120px; /* Adjust this value to increase or decrease the height */
+    padding: 10px; /* Optional, for padding inside the text area */
+    border: 1px solid #ccc; /* Optional, to define a border */
+    border-radius: 5px; /* Optional, for rounded corners */}
+
 
 .contact-form button {
     width: 20%; /* Full width button */
@@ -242,7 +250,7 @@ body {
     margin-left: 850px; /* Aligns container to the right */
     margin-right: 20px; /* Space between contact form and testimonials */
     position: relative; /* Allow positioning of child elements */
-    top: -470px; /* Adjust this value to move the container up */
+    top: -550px; /* Adjust this value to move the container up */
 }
 
 .testimonial {
@@ -461,3 +469,24 @@ body {
         text-align: center;
     }
 }
+
+/* Styling the error messages */
+.error-message {
+    color: red;
+    padding: 1px;
+    margin: 5px 0 0 0; /* Aligns messages without left offset */
+    font-size: 14px;
+    border-radius: 3px;
+    display: block; /* Ensures messages stack below inputs */
+    text-align: left; /* Aligns the text to the left */
+    width: 100%; /* Ensures the message spans the full width of the container */
+}
+
+
+/* Optional: Style the input fields when they have an error */
+input:invalid, textarea:invalid {
+    border: 3px solid red;
+}
+
+
+
