@@ -50,7 +50,8 @@
             font-size: 0.9rem;
         }
 
-        .comment-form button {
+         .comment-form button, 
+        .comments-list .btn { /* Add selector to target both buttons */
             padding: 10px;
             font-size: 0.9rem;
             background-color: var(--main-bg);
@@ -60,11 +61,11 @@
             cursor: pointer;
             transition: background-color 0.3s ease;
         }
-
-        .comment-form button:hover {
+        
+        .comment-form button:hover, 
+        .comments-list .btn:hover { /* Same hover effect */
             background-color: #2b5e5c;
         }
-
         /* Media Queries for larger screens */
         @media (min-width: 768px) {
             .content-container, .comment-section {
