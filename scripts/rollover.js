@@ -90,6 +90,11 @@ window.onload = function () {
     "images/blogimage6.webp"
   );
 
+  addRolloverEffect(
+    "bootcampServiceCard", // Match this ID
+    "images/home/bootcamp-services-hover.jpg", // Ensure this image path is correct
+    "images/home/bootcamp-services.jpeg" // Ensure this image path is correct
+  );
   
 
 

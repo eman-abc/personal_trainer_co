@@ -1,14 +1,19 @@
-// Show Details
-document.getElementById("showDetails").addEventListener("click", function () {
-    document.getElementById("detailsSection").style.display = "block";
-});
+document.addEventListener("DOMContentLoaded", () => {
+    const pricingTable = document.querySelector(".pricing-table");
+    const showHideButton = document.getElementById("toggle-details");
+    
+    let isTableVisible = false;
 
-// Hide Details
-document.getElementById("hideDetails").addEventListener("click", function () {
-    document.getElementById("detailsSection").style.display = "none";
-});
-
-// Change Background Color
-document.getElementById("changeColor").addEventListener("click", function () {
-    document.body.style.backgroundColor = "#70d0cc"; // Bright teal color
+    // Ensure the pricing table is hidden initially
+    pricingTable.style.display = "none";
+    
+    showHideButton.addEventListener("click", () => {
+        isTableVisible = !isTableVisible;
+        
+        // Toggle display style based on isTableVisible
+        pricingTable.style.display = isTableVisible ? "block" : "none";
+        
+        // Update button text
+        showHideButton.textContent = isTableVisible ? "Hide Details" : "Show Details";
+    });
 });

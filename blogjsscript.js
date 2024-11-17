@@ -42,13 +42,3 @@ function resetTextStyle() {
 changeStyleBtn.addEventListener('click', changeTextStyle);
 resetStyleBtn.addEventListener('click', resetTextStyle);
 
-
-// Function to change the image on hover
-function changeImage(imageElement, newSrc) {
-    imageElement.src = newSrc; // Change to hover image
-}
-
-// Function to revert to the original image
-function revertImage(imageElement, originalSrc) {
-    imageElement.src = originalSrc; // Revert to original image
-}
