@@ -211,7 +211,7 @@ body{
 /* Styled state: apply smooth drop effect */
 .blog-item .blog-card-title.styled-text,
 .blog-item .blog-text span.styled-text {
-    transform: translateY(20px);
+    transform: translateX(10px);
     /* Dropped position */
     font-weight: bold;
     font-style: italic;
