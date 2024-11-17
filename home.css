@@ -30,152 +30,83 @@ body {
     line-height: 1.6;
 }
 
-/* Navbar */
+/* Root Variables */
+:root {
+    --nav-footer: #020e26;
+    --bright-teal: #70d0cc;
+    --nav-text: #ffffff;
+}
+
+/* Navbar Styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 30px;
     background-color: var(--nav-footer);
-    color: white;
-    height: 60px;
-    /* Fixed height for the navbar */
-    position: sticky;
-    /* Make the navbar sticky */
-    top: 0;
-    /* Position it at the top */
+    padding: 15px 30px;
+    color: var(--nav-text);
     z-index: 1000;
-    /* Ensure it appears above other content */
 }
 
-/* Logo */
-.navbar .logo img {
-    max-height: 120px;
-    /* Adjust the logo height to fit within the navbar */
-    width: auto;
-    /* Maintain the aspect ratio */
+/* Logo Styling */
+.navbar-brand img {
+    max-height: 60px;
+    /* Keep logo size consistent */
     object-fit: contain;
-    /* Prevents the logo from stretching */
-    padding-top: 25px;
-    /* Equal padding on all sides */
-    box-sizing: border-box;
-    /* Ensures padding is included in the element's total width/height */
+    /* Prevent stretching */
 }
 
-
-.nav-links {
-    list-style: none;
-}
-
-.nav-links li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.nav-links a {
-    color: white;
+/* Navbar Links */
+.nav-link {
+    color: var(--nav-text);
+    /* Default text color */
     text-decoration: none;
-    font-size: 1.3rem;
-
+    font-size: 1.2rem;
+    margin: 0 10px;
 }
 
-.nav-links a:hover {
+.nav-link:hover {
     color: var(--bright-teal);
+    /* Highlight on hover */
 }
 
-/* Responsive Styles for Navbar */
+/* Dropdown Menu */
+.dropdown-menu {
+    background-color: #dcdfd8;
+    /* Light gray background */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+}
+
+.dropdown-menu a {
+    color: var(--nav-footer);
+    /* Text color */
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+.dropdown-menu a:hover {
+    color: var(--bright-teal);
+    /* Hover color */
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
-        height: auto;
-        /* Allow navbar to expand */
+        padding: 10px 20px;
+        /* Smaller padding */
     }
 
-    .nav-links {
-        display: block;
-        /* Stack links vertically */
-        width: 100%;
-        /* Full width for nav links */
-        margin-top: 10px;
+    .navbar-brand img {
+        max-height: 50px;
+        /* Reduce logo size */
     }
 
-    .nav-links li {
-        margin-bottom: 10px;
-        /* Add spacing between stacked links */
-    }
-
-    .nav-links a {
-        font-size: 1.2rem;
-        padding: 10px 0;
-        display: block;
-        /* Make links take full width */
-        text-align: left;
-        padding-left: 20px;
-        /* Align text with some padding */
-    }
-
-    .navbar .logo img {
-        max-height: 80px;
-        /* Adjust logo size for smaller screens */
+    .nav-link {
+        font-size: 1rem;
+        /* Smaller font size */
     }
 }
 
-/* The dropdown container */
-.dropdown {
-    float: left;
-    overflow: hidden;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-    border: none;
-    outline: none;
-    color: white;
-    margin: 0 15px;
-    background-color: inherit;
-    font-family: inherit;
-    font-size: 1.3rem;
-    padding: 5px 0px;
-}
-
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #dcdfd8;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 10px;
-
-
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: var(--nav-footer);
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-
-
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-    color: var(--bright-teal);
-
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 /* Hero Section */
 .hero {
@@ -752,4 +683,224 @@ body {
         padding: 20px;
         /* Add padding for better spacing */
     }
+}
+
+
+/* General Styling */
+.details-section {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+    color: #343a40;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.details-section h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #020e26;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#details-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Statistics Section */
+#statistics {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#statistics .col-md-3 {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+#statistics h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #020e26;
+    margin-bottom: 15px;
+}
+
+#statistics p {
+    font-size: 1.1rem;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* Feature Icons */
+#feature-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#feature-icons .col-md-3 {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#feature-icons i {
+    color: #2a3e4b;
+    font-size: 3rem;
+    margin-bottom: 15px;
+}
+
+#feature-icons h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+#feature-icons p {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.4;
+}
+
+/* Action Buttons */
+#show-details,
+#hide-details,
+#change-bg {
+    font-size: 1.1rem;
+    padding: 15px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#show-details:hover,
+#hide-details:hover,
+#change-bg:hover {
+    transform: scale(1.05);
+}
+
+#show-details,
+#hide-details,
+#change-bg {
+    background-color: #020e26;
+    color: white;
+    border: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .details-section {
+        padding: 40px 10px;
+    }
+
+    #statistics {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #feature-icons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #statistics .col-md-3,
+    #feature-icons .col-md-3 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+.service-image {
+    transition: opacity 1s ease-in-out;
+    /* Add a smooth fade effect */
+    opacity: 1;
+    /* Make sure images are visible by default */
+}
+
+.service-card:hover .service-image {
+    opacity: 0.7;
+    /* Add hover effect, change opacity on hover */
+}
+
+/* Container Styling */
+.position-absolute {
+    z-index: 10;
+    /* Ensure buttons appear on top of other content */
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    /* Optional translucent background for better visibility */
+    border-radius: 10px;
+    /* Rounded corners for the container */
+    padding: 10px;
+    /* Add spacing around the buttons */
+}
+
+/* Change Text Style Button */
+#change-text-style {
+    background-color: var(--teal);
+    /* Custom background color */
+    color: var(--nav-footer);
+    /* Text color */
+    font-weight: bold;
+    /* Make text bold */
+    padding: 8px 15px;
+    /* Adjust padding */
+    border-radius: 6px;
+    /* Rounded corners */
+    border: none;
+    /* Remove default border */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+}
+
+#change-text-style:hover {
+    background-color: var(--sea-green);
+    /* Change color on hover */
+    transform: scale(1.05);
+    /* Slight zoom effect */
+}
+
+/* Reset Text Style Button */
+#reset-text-style {
+    background-color: var(--light-gray);
+    /* Subtle background */
+    color: var(--nav-footer);
+    /* Contrast text color */
+    font-weight: bold;
+    /* Emphasize text */
+    padding: 8px 15px;
+    /* Adjust padding */
+    border-radius: 6px;
+    /* Rounded corners */
+    border: none;
+    /* Remove default border */
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+}
+
+#reset-text-style:hover {
+    background-color: var(--medium-gray);
+    /* Darken on hover */
+    transform: scale(1.05);
+    /* Slight zoom effect */
+}
+
+/* Align Buttons */
+.d-flex.flex-column.align-items-end button {
+    margin-bottom: 10px;
+    /* Add spacing between buttons */
+}
+
+.d-flex.flex-column.align-items-end button:last-child {
+    margin-bottom: 0;
+    /* Remove margin for the last button */
 }
