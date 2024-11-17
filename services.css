@@ -158,13 +158,14 @@ h3 {
 
 .care-pricing-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
     padding: 40px;
-    align-items: flex-start;
     background-image: url(images/service%20images/blue-bg.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    gap: 20px; /* Add spacing between elements */
 }
 
 /* Care Content */
@@ -203,7 +204,9 @@ h3 {
     display: flex;
     justify-content: center;
     margin: 20px 0;
+    align-self: center;
 }
+
 
 .action-buttons button {
     background-color: white;
@@ -227,9 +230,10 @@ h3 {
 .pricing-table {
     color: #fbf2c4;
     flex: 0.5;
-    text-align: right;
-    margin-left: auto;
+    text-align: center;
+    margin: 0 auto;
 }
+
 
 .pricing-table h2 {
     font-size: 1.5rem;
@@ -292,16 +296,17 @@ h3 {
 
 
 
-
 /* Bootcamp Container for Variants */
 .bootcamp-container {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to new rows */
     background-color: #020e26;
     justify-content: space-around;
     align-items: center;
     margin-top: 40px;
 }
 
+/* Bootcamp Variants Section */
 .bootcamp-variants-section {
     background-color: #020e26;
     padding: 50px 0;
@@ -314,15 +319,17 @@ h3 {
     font-size: 2rem;
     font-weight: 900;
     margin: 0 0 30px;
-
 }
+
 
 /* Individual Bootcamp Variant */
 .bootcamp-variant {
     text-align: center;
-    width: 30%;
+    width: 30%; /* Default width to fit 3 items per row */
     padding: 15px;
+    margin: 10px 0; /* Add spacing between items */
 }
+
 
 /* Bootcamp Variant Images */
 .bootcamp-image {
@@ -332,7 +339,6 @@ h3 {
     transition: transform 0.3s ease;
 }
 
-/* Hover effect for images */
 .bootcamp-variant:hover .bootcamp-image {
     transform: scale(1.05);
 }
@@ -350,23 +356,61 @@ h3 {
     font-size: 1rem;
 }
 
+
+
+/* Medium screens (tablets) */
+@media (max-width: 1024px) {
+    .bootcamp-variant {
+        width: 45%; /* 2 items per row */
+    }
+}
+
+/* Small screens (mobile devices) */
+@media (max-width: 650px) {
+    .bootcamp-variant {
+        width: 100%; /* 1 item per row */
+    }
+}
+
+
 /* Sports Container */
 .sports-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px; /* Space between items */
     background-color: #020e26;
     color: #fbf2c4;
     padding: 20px;
-    gap: 0px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1100px) {
+    /* For medium screens (tablets) */
+    .sports-container {
+        grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+    }
+}
+
+@media (max-width: 768px) {
+    /* For small screens (mobile devices) */
+    .sports-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    }
+}
+
+@media (max-width: 600px) {
+    /* For very small screens (extra small mobile devices) */
+    .sports-container {
+        grid-template-columns: 1fr; /* 1 item per row */
+    }
 }
 
 .sports-variant {
     position: relative;
-    width: 24%;
     text-align: center;
     overflow: hidden;
 }
+
 /* Sports Image */
 .sports-image {
     width: 100%;
@@ -402,6 +446,153 @@ h3 {
     color: #ed1e24;
     font-weight: bold;
 }
+
+
+label {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff; /* White color */
+}
+
+/* Form Styling */
+#exerciseForm {
+    background-color: var(--navy-gray);
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.9);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    display: none; /* Initially hidden */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+#exerciseForm input,
+#exerciseForm textarea,
+#exerciseForm button {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#exerciseForm input[type="text"],
+#exerciseForm input[type="file"],
+#exerciseForm textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #ffffff;
+    color: var(--navy-gray);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+#exerciseForm input[type="text"]:focus,
+#exerciseForm textarea:focus {
+    border-color: var(--bright-teal);
+}
+
+#exerciseForm button {
+    background-color: var(--bright-teal);
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    
+}
+
+#exerciseForm button:hover {
+    background-color: var(--sea-green);
+    transform: scale(1.05);
+}
+
+/* Add Service Button */
+#toggleFormButton {
+    background-color: var(--sea-green);
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    width: 100%;
+    max-width: 180px;
+    margin: 20px;
+}
+
+#toggleFormButton:hover {
+    background-color: var(--forest-green);
+    transform: scale(1.05);
+}
+
+/* Remove Service Button */
+#removeExercise {
+    background-color: var(--muted-red);
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+    width: 100%;
+    max-width: 180px;
+    margin: 20px;
+
+    gap: 10px;
+}
+
+#removeExercise:hover {
+    background-color: #e55e50;
+    transform: scale(1.05);
+}
+
+/* Responsive Form */
+@media (max-width: 768px) {
+    #exerciseForm {
+        padding: 15px;
+    }
+
+    #toggleFormButton,
+    #removeExercise {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+/* Button Container */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 20px;
+}
+
+.action-buttons button {
+    background-color: white;
+    color: var(--dark-blue);
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: 2px solid var(--dark-blue);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background-color: var(--dark-blue);
+    color: white;
+}
+
 
 /* Footer */
 .footer {

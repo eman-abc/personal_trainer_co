@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
         pricingTable.style.display = isTableVisible ? "block" : "none";
         
         // Update button text
-        showHideButton.textContent = isTableVisible ? "Hide Details" : "Show Details";
+        showHideButton.textContent = isTableVisible ? "Hide Pricing  Details" : "Show Pricing Details";
     });
 });
