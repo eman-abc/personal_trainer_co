@@ -18,24 +18,45 @@ function hideDetails() {
     statistics.classList.add('d-none');
 }
 
-// Switch Background Color Function
-let isColor1 = true; // Flag to track the current color
 
-function changeBackgroundColor() {
-    const color1 = '#f8f9fa'; // First color
-    const color2 = '#020e26'; // Second color
+document.addEventListener('DOMContentLoaded', function () {
+    function rgbToHex(rgb) {
+        const result = rgb.match(/\d+/g);
+        return `#${result.map(x => parseInt(x).toString(16).padStart(2, '0')).join('')}`;
+    }
 
-    // Switch between color1 and color2
-    details.style.backgroundColor = isColor1 ? color1 : color2;
+    function changeBackgroundColor() {
+        var section = document.getElementById('details');
+        if (!section) {
+            console.error("Element with ID 'details' not found.");
+            return;
+        }
 
-    // Toggle the flag
-    isColor1 = !isColor1;
-}
+        // Colors array in hex format
+        var colors = ['#8ba0a4', '#7f9ca0'];
+        var currentColor = getComputedStyle(section).backgroundColor;
+
+        // Convert current color to hex
+        var currentHexColor = rgbToHex(currentColor);
+
+        var currentIndex = colors.indexOf(currentHexColor);
+        if (currentIndex === -1) {
+            console.error("Current color not found in colors array:", currentHexColor);
+            return;
+        }
+
+        var nextColor = colors[(currentIndex + 1) % colors.length];
+        console.log(`Changing background color: Current = ${currentHexColor}, Next = ${nextColor}`);
+        section.style.backgroundColor = nextColor;
+    }
+
+    document.getElementById('change-bg').addEventListener('click', changeBackgroundColor);
+});
+
 
 // Attach event listeners to buttons for showDetails, hideDetails, and changeBackgroundColor
 document.getElementById('show-details').addEventListener('click', showDetails);
 document.getElementById('hide-details').addEventListener('click', hideDetails);
-document.getElementById('change-bg').addEventListener('click', changeBackgroundColor);
 
 
 // Function to change the text style
