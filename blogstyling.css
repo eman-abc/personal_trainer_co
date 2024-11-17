@@ -90,7 +90,7 @@
 .blog-text h2 {
     font-family: var(--playfair);
     padding: 1rem 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 1000;
 color: #248c84;
 }
@@ -170,9 +170,31 @@ color: #248c84;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: flex-end; /* Align buttons to the right */
-    margin-right: 20px; /* Add spacing from the blog items */
-    margin-top: 20px; /* Add spacing from the top of the blog container */
+    align-items: center; /* Center align the buttons */
+    margin: 20px auto; /* Center horizontally and add spacing */
+}
+
+/* Style for blog titles and descriptions with transition */
+/* Default state: visible but no styling */
+.blog-item .blog-card-title,
+.blog-item .blog-text span {
+    opacity: 1; /* Fully visible by default */
+    transform: translateY(0); /* Normal position */
+    transition: all 0.5s ease; /* Smooth transition */
+}
+
+/* Styled state: apply smooth drop effect */
+.blog-item .blog-card-title.styled-text,
+.blog-item .blog-text span.styled-text {
+    transform: translateY(20px); /* Dropped position */
+    font-weight: bold;
+    font-style: italic;
+    color: #DE3163; /* Title text color */
+}
+
+/* Description-specific style */
+.blog-item .blog-text span.styled-text {
+    color: blue; /* Description text color */
 }
 
 /* Style for the buttons */
@@ -186,25 +208,26 @@ color: #248c84;
     background-color: #fbf2c4;
     color: #3d6f6d;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease,transform 0.3s ease;
 }
 
 .style-buttons button:hover {
     background-color: #dcdfd8;
+    transform: scale(1.1); /* Add a scaling effect on hover */
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
     .style-buttons {
-        align-items: center; /* Center-align buttons for smaller screens */
-        margin-right: 0; /* Remove right margin on small screens */
+        margin-right: 0; /* Ensure no right margin */
     }
 
     .style-buttons button {
-        width: 100%; /* Make buttons stretch full-width on small screens */
-        max-width: 300px; /* Limit button width for better usability */
+        width: 100%; /* Optional: Full-width buttons for smaller screens */
+        max-width: 300px; /* Keep as is for usability */
     }
 }
+
 
 @media (max-width: 480px) {
     .style-buttons button {

@@ -694,7 +694,7 @@ body {
     padding: 60px 20px;
     color: #343a40;
     border-radius: 8px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+   
     font-family: "Roboto Condensed", sans-serif;
 }
 
@@ -750,7 +750,7 @@ body {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #020e26;
     text-align: center;
 }
 
@@ -763,7 +763,7 @@ body {
 #feature-icons h5 {
     font-size: 1.25rem;
     font-weight: 600;
-    color: #343a40;
+    color: #020e26;
     margin-bottom: 10px;
 }
 
@@ -772,6 +772,8 @@ body {
     color: #6c757d;
     line-height: 1.4;
 }
+
+
 
 /* Action Buttons */
 #show-details,
@@ -834,75 +836,204 @@ body {
     /* Add hover effect, change opacity on hover */
 }
 
-/* Container Styling */
-.position-absolute {
-    z-index: 10;
-    /* Ensure buttons appear on top of other content */
-    /* background-color: rgba(0, 0, 0, 0.5); */
-    /* Optional translucent background for better visibility */
-    border-radius: 10px;
-    /* Rounded corners for the container */
-    padding: 10px;
-    /* Add spacing around the buttons */
+
+
+
+/* Header Container Styling */
+.header-container {
+    display: flex;
+    flex-direction: row;  /* Default to horizontal layout on larger screens */
+    align-items: center;   /* Vertically align the heading and buttons */
+    justify-content: center;  /* Center the content horizontally */
+    margin-bottom: 30px; /* Ensure spacing between heading and buttons */
+    gap: 20px; /* Space between the heading and buttons */
 }
 
 /* Change Text Style Button */
 #change-text-style {
     background-color: var(--teal);
-    /* Custom background color */
     color: var(--nav-footer);
-    /* Text color */
     font-weight: bold;
-    /* Make text bold */
     padding: 8px 15px;
-    /* Adjust padding */
     border-radius: 6px;
-    /* Rounded corners */
     border: none;
-    /* Remove default border */
     transition: all 0.3s ease;
-    /* Smooth hover effect */
 }
 
 #change-text-style:hover {
     background-color: var(--sea-green);
-    /* Change color on hover */
     transform: scale(1.05);
-    /* Slight zoom effect */
 }
 
 /* Reset Text Style Button */
 #reset-text-style {
     background-color: var(--light-gray);
-    /* Subtle background */
     color: var(--nav-footer);
-    /* Contrast text color */
     font-weight: bold;
-    /* Emphasize text */
     padding: 8px 15px;
-    /* Adjust padding */
     border-radius: 6px;
-    /* Rounded corners */
     border: none;
-    /* Remove default border */
     transition: all 0.3s ease;
-    /* Smooth hover effect */
 }
 
 #reset-text-style:hover {
     background-color: var(--medium-gray);
-    /* Darken on hover */
     transform: scale(1.05);
-    /* Slight zoom effect */
 }
 
-/* Align Buttons */
-.d-flex.flex-column.align-items-end button {
-    margin-bottom: 10px;
-    /* Add spacing between buttons */
+/* Align Button Container */
+.button-container {
+    margin-top: 15px;
+    /* Space between heading and button container */
 }
 
-.d-flex.flex-column.align-items-end button:last-child {
-    margin-bottom: 0;
-    /* Remove margin for the last button */
+/* Service Cards Styling */
+.service-cards {
+    padding-top: 20px; /* Add space between cards and top of section */
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;  /* Stack items vertically on small screens */
+        align-items: center;   /* Center the content */
+        text-align: center;    /* Center the heading and buttons */
+        margin-bottom: 15px;   /* Reduce space below heading */
+    }
+
+    .button-container {
+        margin-top: 20px;   /* Space buttons further from heading */
+    }
+
+    .d-flex.flex-column.align-items-center button {
+        margin-bottom: 10px;   /* Add space between buttons */
+    }
+
+    .service-cards {
+        padding-top: 40px;  /* Add space above service cards */
+    }
+}
+
+
+
+/* General Section Styling */
+.details-section {
+    background-color: #8ba0a4;  /* Light background color for the section */
+    padding: 40px 0;  /* Add padding for top and bottom */
+    border-radius: 0px;  /* Slightly rounded corners */
+}
+
+/* Heading Styling */
+.details-section h2 {
+    font-size: 2.5rem;  /* Larger font size */
+    font-weight: 700;  /* Bold font */
+    color: #020e26;  /* Dark text color */
+    margin-bottom: 30px;  /* Space below the heading */
+    text-transform: uppercase;  /* Uppercase text for emphasis */
+}
+
+/* Paragraph Styling */
+#details-text {
+    font-size: 1.125rem;  /* Medium size text */
+    color: #6c757d;  /* Muted text color */
+    line-height: 1.8;  /* Spacing between lines */
+    margin-bottom: 30px;  /* Space below the paragraph */
+}
+
+/* Statistics Section Styling */
+#statistics .col-md-3 {
+    color: #020e26;
+    background-color: transparent;  /* White background for statistics cards */
+    border-radius: 0px;  /* Rounded corners for the cards */
+    padding: 30px;  /* Padding inside the card */
+    text-align: center;  /* Center the text inside each card */
+}
+
+
+
+/* Feature Icons Section Styling */
+#feature-icons .col-md-3 {
+    background-color: transparent;  /* White background for each icon block */
+    border-radius: 0px;  /* Rounded corners */
+    color: #020e26;
+    padding: 30px;  /* Padding inside each icon block */
+    text-align: center;  /* Centered text */
+    
+}
+
+/* Feature Icon Styling */
+#feature-icons i {
+    font-size: 3rem;  /* Larger icons */
+    color: #020e26;  /* Primary color for icons */
+    margin-bottom: 15px;  /* Space below the icon */
+}
+/* Buttons Styling */
+.btn-lg {
+    font-size: 1rem;  /* Smaller font size */
+    padding: 10px 20px;  /* Reduced padding for smaller size */
+    border-radius: 5px;  /* Rounded corners */
+    width: auto;  /* Auto width to fit the button's content */
+    transition: all 0.3s ease;  /* Smooth transition for color and effects */
+}
+
+/* Show/Hide Buttons */
+#show-details, #hide-details {
+    background-color: #020e26;  /* Lively blue for primary action */
+    color: white;
+    border: none;
+    text-transform: uppercase;  /* Uppercase text for emphasis */
+    font-weight: bold;  /* Make the text bold */
+}
+
+#show-details:hover, #hide-details:hover {
+    background-color: #2a3e4b;  /* Darker blue on hover */
+    transform: scale(1.05);  /* Slight scale effect on hover */
+}
+
+/* Change Background Button */
+#change-bg {
+    background-color: #44546c;  /* Fresh green for positive action */
+    color: white;
+    border: none;
+    text-transform: uppercase;  /* Uppercase text for emphasis */
+    font-weight: bold;  /* Make the text bold */
+}
+
+#change-bg:hover {
+    background-color: #020e26;  /* Darker green on hover */
+    transform: scale(1.05);  /* Slight scale effect on hover */
+}
+
+
+/* Responsive Styling for Small Screens */
+@media (max-width: 768px) {
+    /* Adjusting for smaller screens */
+    .details-section {
+        padding: 30px 15px;  /* Reduced padding on smaller screens */
+    }
+
+    /* Adjust Heading Font Size */
+    .details-section h2 {
+        font-size: 2rem;
+    }
+
+    /* Adjust Paragraph Font Size */
+    #details-text {
+        font-size: 1rem;
+    }
+
+    /* Statistics Section Cards on Small Screens */
+    #statistics .col-md-3 {
+        padding: 20px;  /* Reduced padding */
+    }
+
+    /* Feature Icons Section on Small Screens */
+    #feature-icons .col-md-3 {
+        padding: 20px;  /* Reduced padding */
+    }
+
+    /* Button Styles on Small Screens */
+    .btn-lg {
+        font-size: 1rem;  /* Slightly smaller buttons */
+    }
 }
