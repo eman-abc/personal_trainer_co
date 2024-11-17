@@ -118,9 +118,3 @@ window.onload = function () {
   );
 
 };
-
-
-
-
-
-
