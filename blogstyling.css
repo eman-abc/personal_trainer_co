@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
 :root {
@@ -20,15 +21,15 @@
     --dark-teal: #248c84;
 }
 
-body{
-    width: 100vw;
-    overflow-x: hidden;
-}
+
 
 /* Blog Section */
 .blog {
+
+    overflow-x: hidden;
+    width:fit-content;
     background: #3d6f6d;
-    padding: 10px 10px;
+  
 }
 
 .blog h2 {
@@ -43,45 +44,39 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px;
-    /* Adjust the spacing between blog items */
+    gap: 20px; /* Adjust the spacing between blog items */
     margin: 10px 40px;
 
 }
 
 .blog-item {
-    flex: 1 1 calc(33.333% - 20px);
-    /* 3 items per row with spacing */
+    flex: 1 1 calc(33.333% - 20px); /* 3 items per row with spacing */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-    margin: 10px;
-    /* Add some margin around each item */
-    background: #fbf2c4;
+    margin: 10px; /* Add some margin around each item */
+    background:#fbf2c4;
     border-radius: 40px;
 }
 
 .blog-image {
     position: relative;
     width: 100%;
-    height: 250px;
-    /* Set a fixed height for the images */
-    overflow: hidden;
-    /* Ensure any excess part of the image is hidden */
-    border-radius: 30px;
+    height: 250px; /* Set a fixed height for the images */
+    overflow: hidden; /* Ensure any excess part of the image is hidden */
+	 border-radius: 30px;
 
 }
 
 .blog-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    /* Ensures the image covers the entire area without distortion */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
 }
 
 .blog-image span {
     position: absolute;
     bottom: 10px;
     right: 10px;
-
+   
     color: #0B192C;
     font-size: 1.4rem;
     padding: 20px, 20px;
@@ -102,7 +97,7 @@ body{
     padding: 1rem 0;
     font-size: 1.8rem;
     font-weight: 1000;
-    color: #248c84;
+color: #248c84;
 }
 
 .blog-text a {
@@ -124,27 +119,21 @@ body{
 
 /* Style for the blog-item container */
 .blog-item {
-    position: relative;
-    /* This makes the blog-item a reference point for the button positioning */
+    position: relative; /* This makes the blog-item a reference point for the button positioning */
 }
 
 /* Style for the blog-item container */
 .blog-item {
-    position: relative;
-    /* This makes the blog-item a reference point for the button positioning */
+    position: relative; /* This makes the blog-item a reference point for the button positioning */
 }
 
 /* Style for the blog-card-btn */
 .blog-item .blog-card-btn {
-    position: absolute;
-    /* Position it absolutely inside the blog-item */
-    bottom: 25px;
-    /* Distance from the bottom of the container */
-    left: 15px;
-    /* Distance from the left of the container */
+    position: absolute; /* Position it absolutely inside the blog-item */
+    bottom: 25px; /* Distance from the bottom of the container */
+    left: 15px; /* Distance from the left of the container */
     padding: 10px 20px;
-    background-color: var(--dark-blue);
-    /* Teal color */
+    background-color: var(--dark-blue); /* Teal color */
     color: white;
     text-align: center;
     border-radius: 10px;
@@ -155,8 +144,7 @@ body{
 }
 
 .blog-item .blog-card-btn:hover {
-    background-color: var(--bright-teal);
-    /* Darker teal for hover effect */
+    background-color: var(--bright-teal); /* Darker teal for hover effect */
 }
 
 
@@ -177,35 +165,27 @@ body{
         flex-direction: row;
         grid-template-columns: repeat(3, 1fr);
     }
-
+    
     .blog-item {
-        flex: 1 1 calc(33.333% - 20px);
-        /* Ensuring the items do not span the entire width */
+        flex: 1 1 calc(33.333% - 20px); /* Ensuring the items do not span the entire width */
     }
 }
-
 .style-buttons {
-    position: relative;
-    /* Make it flow within the blog container */
+    position: relative; /* Make it flow within the blog container */
     display: flex;
     flex-direction: column;
     gap: 10px;
-    align-items: center;
-    /* Center align the buttons */
-    margin: 20px auto;
-    /* Center horizontally and add spacing */
+    align-items: center; /* Center align the buttons */
+    margin: 20px auto; /* Center horizontally and add spacing */
 }
 
 /* Style for blog titles and descriptions with transition */
 /* Default state: visible but no styling */
 .blog-item .blog-card-title,
 .blog-item .blog-text span {
-    opacity: 1;
-    /* Fully visible by default */
-    transform: translateY(0);
-    /* Normal position */
-    transition: all 0.5s ease;
-    /* Smooth transition */
+    opacity: 1; /* Fully visible by default */
+    transform: translateY(0); /* Normal position */
+    transition: all 0.5s ease; /* Smooth transition */
 }
 
 /* Styled state: apply smooth drop effect */
@@ -215,19 +195,17 @@ body{
     /* Dropped position */
     font-weight: bold;
     font-style: italic;
-    color: #DE3163;
-    /* Title text color */
+    color: #DE3163; /* Title text color */
 }
 
 /* Description-specific style */
 .blog-item .blog-text span.styled-text {
-    color: blue;
-    /* Description text color */
+    color: blue; /* Description text color */
 }
 
 /* Style for the buttons */
 .style-buttons button {
-    width: 160px;
+    width: 160px; 
     padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
@@ -236,36 +214,30 @@ body{
     background-color: #fbf2c4;
     color: #3d6f6d;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.3s ease,transform 0.3s ease;
 }
 
 .style-buttons button:hover {
     background-color: #dcdfd8;
-    transform: scale(1.1);
-    /* Add a scaling effect on hover */
+    transform: scale(1.1); /* Add a scaling effect on hover */
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
     .style-buttons {
-        margin-right: 0;
-        /* Ensure no right margin */
+        margin-right: 0; /* Ensure no right margin */
     }
 
     .style-buttons button {
-        width: 100%;
-        /* Optional: Full-width buttons for smaller screens */
-        max-width: 300px;
-        /* Keep as is for usability */
+        width: 100%; /* Optional: Full-width buttons for smaller screens */
+        max-width: 300px; /* Keep as is for usability */
     }
 }
 
 
 @media (max-width: 480px) {
     .style-buttons button {
-        font-size: 14px;
-        /* Adjust font size for very small screens */
-        padding: 8px 16px;
-        /* Adjust padding for better fit */
+        font-size: 14px; /* Adjust font size for very small screens */
+        padding: 8px 16px; /* Adjust padding for better fit */
     }
 }
