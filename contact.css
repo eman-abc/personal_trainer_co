@@ -1,15 +1,16 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('2.jpg');
+    background-image: url('images/contact/2.jpg');
     background-repeat: no-repeat;
-    background-size: 100% 36%; 
+    background-size: 100% 30%; 
     background-position: center top;
     background-attachment: scroll;
-    background-color: var(--dark-teal);
+    background-color: #277972 !important; /* Add !important */
     margin: 0;
     padding: 0;
     position: relative;
+    box-sizing: border-box;
 }
 
 /* Banner Styles */
@@ -32,10 +33,15 @@ body {
     z-index: 1;
     padding: 20px;
     border-radius: 10px;
-    font-size: 3.5rem;
+    font-size: 3.5rem !important;
     white-space: nowrap; /* Prevent line breaks */
     animation: scrollText 6s linear infinite; /* Call the animation */
 }
+
+.banner-message h2 {
+    font-size: 5rem !important;
+}
+
 
 /* Keyframe Animation for Horizontal Scrolling */
 @keyframes scrollText {
@@ -47,20 +53,18 @@ body {
     }
 }
 
-
-
 /* Contact Information Styles */
 .contact-info {
     text-align: center;
     padding: 20px;
     font-size: 1.6rem;
     color: #ffffff;
-    margin-top: 350px; /* Proper margin for spacing */
+    margin-top: 170px; /* Proper margin for spacing */
 }
 
 .contact-info h3 {
     margin-bottom: -8px;
-    margin-top: 0;
+    margin-top: 50px;
     padding:35px;
     color: #ffffff;
     font-size: 30px;
@@ -177,7 +181,7 @@ body {
     margin: 20px auto; /* Center the form section */
     width: 70%; /* Width of the form */
     max-width: 600px; /* Maximum width */
-    margin-top: 50px; /*moving down if no inc*/
+    margin-top: 0px; /*moving down if no inc*/
     margin-left:60px;
     text-align: center;
 }
@@ -201,6 +205,7 @@ body {
 
 .contact-form label {
     display: block; /* Block display for labels */
+   text-align:left;
     margin: 10px 0 5px; /* Margins for spacing */
 }
 
@@ -210,8 +215,17 @@ body {
     margin-bottom: 15px; /* Space below inputs */
     border-radius: 5px; /* Rounded corners */
     border: 1px solid #ccc; /* Border color */
+    margin-bottom: 20px;
     background-color: #c9cfc7; /* Light background */
 }
+
+textarea#message {
+    width: 100%; /* Adjust this value as needed (e.g., 80% for 80% of the container width) */
+    height: 120px; /* Adjust this value to increase or decrease the height */
+    padding: 10px; /* Optional, for padding inside the text area */
+    border: 1px solid #ccc; /* Optional, to define a border */
+    border-radius: 5px; /* Optional, for rounded corners */}
+
 
 .contact-form button {
     width: 20%; /* Full width button */
@@ -242,7 +256,7 @@ body {
     margin-left: 850px; /* Aligns container to the right */
     margin-right: 20px; /* Space between contact form and testimonials */
     position: relative; /* Allow positioning of child elements */
-    top: -470px; /* Adjust this value to move the container up */
+    top: -600px; /* Adjust this value to move the container up */
 }
 
 .testimonial {
@@ -275,7 +289,7 @@ body {
 }
 
 .testimonial-1 .avatar {
-    background-image: url('boy.jpg');
+    background-image: url('images/contact/boy.jpg');
     background-repeat: no-repeat;
     background-position: right center; 
    background-size: 130% 150% 150%  ;
@@ -283,7 +297,7 @@ body {
 }
 
 .testimonial-2 .avatar {
-    background-image: url('girl.jpeg');
+    background-image: url('images/contact/girl.jpeg');
     background-repeat: no-repeat;
    background-position: center top;
    background-size: 150% 150%;
@@ -310,154 +324,23 @@ body {
     line-height: 1.5;
 }
 
-/* Basic styling for the footer */
-.footer-container {
-    background-color: var(--nav-footer);
-    padding: 20px;
-    font-family: Arial, sans-serif;
-    color: var(--nav-text);
-    margin-top: -400px;
+
+.error-message {
+    color: red;
+    padding: 0px;
+    margin: 2px 0 0 0; /* Reduced top margin to bring the error message closer */
+    font-size: 14px;
+    border-radius: 3px;
+    display: block; /* Ensures messages stack below inputs */
+    text-align: left; /* Aligns the text to the left */
+    width: 90%; /* Ensures the message spans the full width of the container */
 }
 
-.newsletter {
-    display: flex;
-    flex-direction: row;
-    align-items: end;
-    justify-content: space-between;
-    text-align: center;
-    margin-bottom: 10px;
-    margin-left: 20px;
-
+footer {
+    bottom: 0; /* This will place the footer at the bottom of the page */
+    width: 100%; /* Make sure it spans the full width */
+    margin-top: -500px; /* Adjust to move it up */
+    /* Or use fixed positioning if you want it to stay at the bottom of the viewport */
 }
 
-.newsletter h3 {
-    margin-bottom: 10px;
-    font-size: 18px;
-}
 
-.newsletter-form {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-
-}
-
-.newsletter-form input {
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    margin-right: 10px;
-}
-
-.newsletter-form button {
-    padding: 12px 20px;
-    border: none;
-    background-color: #2e5454;
-    /* color change */
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
-    margin-left: 10px;
-}
-
-.newsletter-form button:hover {
-    background-color: #4cbbb3;
-    /* color change */
-}
-
-.hr {
-    margin: 20px 0;
-    border: none;
-    border-top: 0.5px solid #2e5454;
-
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    color: var(--nav-text);
-    padding: 10px;
-    padding-left: 30px;
-
-}
-
-.footer-section {
-    width: 30%;
-    margin-bottom: 20px;
-    margin: 10px;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section p {
-    margin-bottom: 10px;
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
-.footer-section ul li a {
-    text-decoration: none;
-    color: var(--light-gray);
-
-}
-
-.footer-section ul li a:hover {
-    text-decoration: none;
-    color: white;
-}
-
-.social-media .social-icons {
-    display: flex;
-    gap: 10px;
-    color: #8df0e6;
-}
-
-.social-media {
-    /* margin-right: auto; */
-    align-items: self-end;
-    margin-right: 0px;
-    padding-right: 0px;
-}
-
-.social-media .social-icons img {
-    width: 24px;
-    height: 24px;
-
-}
-
-.footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 15px;
-}
-
-.footer-bottom span {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .footer-section {
-        width: 100%;
-    }
-
-    .footer-bottom {
-        flex-direction: column;
-        text-align: center;
-    }
-}

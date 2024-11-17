@@ -1,44 +1,25 @@
 // blogjsscript.js
-
 // Select buttons
 const changeStyleBtn = document.getElementById('changeStyleBtn');
 const resetStyleBtn = document.getElementById('resetStyleBtn');
 
-// Select all blog article titles or text (adjust selectors as needed)
-const blogTitles = document.querySelectorAll('.blog-item .blog-card-title');
-const blogDescriptions = document.querySelectorAll('.blog-item .blog-text span');
+// Select blog elements
+const blogMeta = document.querySelectorAll('.blog-card-meta');
+const blogTitles = document.querySelectorAll('.blog-card-title');
 
-// Change style function
+// Function to apply styling and animation
 function changeTextStyle() {
-    blogTitles.forEach(title => {
-        title.style.fontWeight = 'bold';
-        title.style.fontStyle = 'italic';
-        title.style.color = '#DE3163';
-    });
-
-    blogDescriptions.forEach(description => {
-        description.style.fontWeight = 'bold';
-        description.style.fontStyle = 'italic';
-        description.style.color = 'blue';
-    });
+    blogMeta.forEach(meta => meta.classList.add('styled-text'));
+    blogTitles.forEach(title => title.classList.add('styled-text'));
 }
 
-// Reset style function
+// Function to reset styling
 function resetTextStyle() {
-    blogTitles.forEach(title => {
-        title.style.fontWeight = 'normal';
-        title.style.fontStyle = 'normal';
-        title.style.color = ''; // Reset to default
-    });
-
-    blogDescriptions.forEach(description => {
-        description.style.fontWeight = 'normal';
-        description.style.fontStyle = 'normal';
-        description.style.color = ''; // Reset to default
-    });
+    blogMeta.forEach(meta => meta.classList.remove('styled-text'));
+    blogTitles.forEach(title => title.classList.remove('styled-text'));
 }
 
-// Attach event listeners
+// Attach event listeners to buttons
 changeStyleBtn.addEventListener('click', changeTextStyle);
 resetStyleBtn.addEventListener('click', resetTextStyle);
 
