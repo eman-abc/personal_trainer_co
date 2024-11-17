@@ -74,6 +74,26 @@
     <div class="bootcamp-variants-section">
         <h2>Our Bootcamp - The All-Rounded Choice</h2>
 
+        <div id="bootcampSection">
+    
+            <button id="toggleFormButton">Add a New Service</button>
+        
+            <form id="exerciseForm" style="display: none;">
+                <label for="exerciseName">Service Name:</label>
+                <input type="text" id="exerciseName" placeholder="Enter service name" required>
+        
+                <label for="exerciseDescription">Service Description:</label>
+                <textarea id="exerciseDescription" placeholder="Enter service description" required></textarea>
+        
+                <label for="exerciseImage">Upload Image:</label>
+                <input type="file" id="exerciseImage" accept="image/*" required>
+        
+                <button type="submit">Add Service</button>
+            </form>
+        
+            <button id="removeExercise">Remove Last Service</button>
+        </div>
+        
 
         <!-- Container for Bootcamp Variants -->
         <div class="bootcamp-container">
@@ -144,7 +164,7 @@
         </div>
     </div>
 
-
+    
     <!-- Footer -->
     <footer class="footer-container">
         <div class="newsletter">
@@ -192,7 +212,7 @@
 
 <script src="scripts/rollover.js"></script>
 <script src="scripts/PricingDetails.js"></script>
-
+<script src="scripts/AddService.js"></script>
 
 </body>
 
