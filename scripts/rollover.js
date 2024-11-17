@@ -103,6 +103,14 @@ window.onload = function () {
     "images/home/yoga_services.jpg" // Ensure this image path is correct
   );
 
+
+  addRolloverEffect(
+    "SportsServiceCard", // for yoga img hover
+    "images/home/Basketball-hover.jpg", // Ensure this image path is correct
+    "images/home/Basketball.jpeg" // Ensure this image path is correct
+  );
+
+
 };
 
 
