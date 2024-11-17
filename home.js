@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         // Colors array in hex format
-        var colors = ['#8ba0a4', '#7f9ca0'];
+        var colors = ['#8ba0a4', '#428c7c'];
         var currentColor = getComputedStyle(section).backgroundColor;
 
         // Convert current color to hex
