@@ -97,6 +97,11 @@ window.onload = function () {
   );
   
 
+  addRolloverEffect(
+    "yogaServiceCard", // for yoga img hover
+    "images/home/yoga_services-hover.jpg", // Ensure this image path is correct
+    "images/home/yoga_services.jpg" // Ensure this image path is correct
+  );
 
 };
 
