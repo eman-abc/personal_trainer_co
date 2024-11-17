@@ -74,37 +74,57 @@
         </div>
     </div>
 
-    <!-- Sports Training Variant Section with New Heading -->
- <div class="sports-container">
-    <!-- Variant 1: Cycling -->
-    <div class="sports-variant">
-        <img id="cyclingImage" src="images/service images/sports/cycling.jpg" alt="Cycling Sessions" class="sports-image">
-        <h3>Cycling</h3>
-        <p>Take your cycling skills to the next level with our high-intensity cycling training programs.</p>
+    
+    <div class="sports-variants-section">
+        <div id="sportsSection">
+            <!-- Move the button and form outside the sports-container -->
+            <button id="toggleSportsFormButton">Add a New Service</button>
+    
+            <form id="sportsForm" style="display: none;">
+                <label for="sportsName">Service Name:</label>
+                <input type="text" id="sportsName" placeholder="Enter service name" required>
+    
+                <label for="sportsDescription">Service Description:</label>
+                <textarea id="sportsDescription" placeholder="Enter service description" required></textarea>
+    
+                <label for="sportsImage">Upload Image:</label>
+                <input type="file" id="sportsImage" accept="image/*" required>
+    
+                <button type="submit">Add Service</button>
+            </form>
+    
+            <button id="removeSports">Remove Last Service</button>
+        </div>
+        
+        <!-- Sports container only holds the added services -->
+        <div class="sports-container">
+            <!-- Initially pre-defined services go here -->
+            <div class="sports-variant">
+                <img id="cyclingImage" src="images/service images/sports/cycling.jpg" alt="Cycling Sessions" class="sports-image">
+                <h3>Cycling</h3>
+                <p>Take your cycling skills to the next level with our high-intensity cycling training programs.</p>
+            </div>
+    
+            <div class="sports-variant">
+                <img id="runningImage" src="images/service images/sports/running.jpg" alt="Running Sessions" class="sports-image">
+                <h3>Running</h3>
+                <p>Our running programs focus on stamina, endurance, and overall fitness improvement.</p>
+            </div>
+    
+            <div class="sports-variant">
+                <img id="triathlonImage" src="images/service images/sports/triathlon.jpg" alt="Triathlon Sessions" class="sports-image">
+                <h3>Triathlon</h3>
+                <p>Challenge yourself with our specialized triathlon training that covers cycling, running, and swimming.</p>
+            </div>
+    
+            <div class="sports-variant">
+                <img id="volleyballImage" src="images/service images/sports/volleyball.jpg" alt="Volleyball Sessions" class="sports-image">
+                <h3>Volleyball</h3>
+                <p>Build teamwork and agility in our competitive volleyball training sessions.</p>
+            </div>
+        </div>
     </div>
-
-    <!-- Variant 2: Running -->
-    <div class="sports-variant">
-        <img id="runningImage" src="images/service images/sports/running.jpg" alt="Running Sessions" class="sports-image">
-        <h3>Running</h3>
-        <p>Our running programs focus on stamina, endurance, and overall fitness improvement.</p>
-    </div>
-
-    <!-- Variant 3: Triathlon -->
-    <div class="sports-variant">
-        <img id="triathlonImage" src="images/service images/sports/triathlon.jpg" alt="Triathlon Sessions" class="sports-image">
-        <h3>Triathlon</h3>
-        <p>Challenge yourself with our specialized triathlon training that covers cycling, running, and swimming.</p>
-    </div>
-
-    <!-- Variant 4: Volleyball -->
-    <div class="sports-variant">
-        <img id="volleyballImage" src="images/service images/sports/volleyball.jpg" alt="Volleyball Sessions" class="sports-image">
-        <h3>Volleyball</h3>
-        <p>Build teamwork and agility in our competitive volleyball training sessions.</p>
-    </div>
-</div>
-
+    
     </div>
     <!-- Pricing Section -->
     <div class="care-pricing-section">
@@ -204,6 +224,7 @@
     </footer>
 
 <script src="scripts/rollover.js"></script>
+<script src="scripts/AddService.js"></script>
 <script src="scripts/PricingDetails.js"></script>
 
 </body>

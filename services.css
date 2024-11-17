@@ -287,16 +287,6 @@ h3 {
     }
 }
 
-/* Download Button */
-#download-pdf {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-}
 
 
 
@@ -312,6 +302,14 @@ h3 {
 
 /* Bootcamp Variants Section */
 .bootcamp-variants-section {
+    background-color: #020e26;
+    padding: 50px 0;
+    text-align: center;
+}
+
+
+/* Bootcamp Variants Section */
+.sports-variants-section {
     background-color: #020e26;
     padding: 50px 0;
     text-align: center;
@@ -458,7 +456,7 @@ label {
 }
 
 /* Form Styling */
-#exerciseForm {
+#exerciseForm, #sportsForm {
     background-color: var(--navy-gray);
     padding: 20px;
     border-radius: 12px;
@@ -470,16 +468,23 @@ label {
     transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
 
+/* Input, textarea, and button styling for both forms */
 #exerciseForm input,
+#sportsForm input,
 #exerciseForm textarea,
-#exerciseForm button {
+#sportsForm textarea,
+#exerciseForm button,
+#sportsForm button {
     width: 100%;
     margin-bottom: 15px;
 }
 
 #exerciseForm input[type="text"],
+#sportsForm input[type="text"],
 #exerciseForm input[type="file"],
-#exerciseForm textarea {
+#sportsForm input[type="file"],
+#exerciseForm textarea,
+#sportsForm textarea {
     padding: 10px;
     border-radius: 8px;
     border: 1px solid #ccc;
@@ -490,11 +495,14 @@ label {
 }
 
 #exerciseForm input[type="text"]:focus,
-#exerciseForm textarea:focus {
+#sportsForm input[type="text"]:focus,
+#exerciseForm textarea:focus,
+#sportsForm textarea:focus {
     border-color: var(--bright-teal);
 }
 
-#exerciseForm button {
+#exerciseForm button,
+#sportsForm button {
     background-color: var(--bright-teal);
     color: #fff;
     font-size: 1.1rem;
@@ -505,16 +513,16 @@ label {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     border: none;
-    
 }
 
-#exerciseForm button:hover {
+#exerciseForm button:hover,
+#sportsForm button:hover {
     background-color: var(--sea-green);
     transform: scale(1.05);
 }
 
 /* Add Service Button */
-#toggleFormButton {
+#toggleFormButton, #toggleSportsFormButton {
     background-color: var(--sea-green);
     color: #fff;
     font-size: 1.1rem;
@@ -530,13 +538,13 @@ label {
     margin: 20px;
 }
 
-#toggleFormButton:hover {
+#toggleFormButton:hover, #toggleSportsFormButton:hover {
     background-color: var(--forest-green);
     transform: scale(1.05);
 }
 
 /* Remove Service Button */
-#removeExercise {
+#removeExercise, #removeSports {
     background-color: var(--muted-red);
     color: white;
     font-size: 1.1rem;
@@ -550,27 +558,29 @@ label {
     width: 100%;
     max-width: 180px;
     margin: 20px;
-
-    gap: 10px;
 }
 
-#removeExercise:hover {
+#removeExercise:hover, #removeSports:hover {
     background-color: #e55e50;
     transform: scale(1.05);
 }
 
 /* Responsive Form */
 @media (max-width: 768px) {
-    #exerciseForm {
+    #exerciseForm,
+    #sportsForm {
         padding: 15px;
     }
 
     #toggleFormButton,
-    #removeExercise {
+    #toggleSportsFormButton,
+    #removeExercise,
+    #removeSports {
         width: 100%;
         max-width: 100%;
     }
 }
+
 
 /* Button Container */
 .action-buttons {
