@@ -696,7 +696,7 @@ body {
 .details-section {
     background-color: #f8f9fa;
     padding: 60px 20px;
-    color: #343a40;
+    color: #70d0cc;
     border-radius: 8px;
    
     font-family: "Roboto Condensed", sans-serif;
@@ -738,8 +738,8 @@ body {
 
 #statistics p {
     font-size: 1.1rem;
-    color: #6c757d;
-    font-weight: 500;
+    color: #a3fff6;
+    font-weight: 600;
 }
 
 /* Feature Icons */
@@ -748,6 +748,7 @@ body {
     justify-content: center;
     gap: 30px;
     margin-top: 30px;
+  
 }
 
 #feature-icons .col-md-3 {
@@ -759,7 +760,7 @@ body {
 }
 
 #feature-icons i {
-    color: #2a3e4b;
+    color: #91d3ff;
     font-size: 3rem;
     margin-bottom: 15px;
 }
@@ -773,7 +774,7 @@ body {
 
 #feature-icons p {
     font-size: 1rem;
-    color: #6c757d;
+    color: var(--muted-red);
     line-height: 1.4;
 }
 
