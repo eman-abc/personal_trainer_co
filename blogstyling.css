@@ -165,3 +165,50 @@ color: #248c84;
         flex: 1 1 calc(33.333% - 20px); /* Ensuring the items do not span the entire width */
     }
 }
+.style-buttons {
+    position: relative; /* Make it flow within the blog container */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end; /* Align buttons to the right */
+    margin-right: 20px; /* Add spacing from the blog items */
+    margin-top: 20px; /* Add spacing from the top of the blog container */
+}
+
+/* Style for the buttons */
+.style-buttons button {
+    width: 160px; 
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: #fbf2c4;
+    color: #3d6f6d;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.style-buttons button:hover {
+    background-color: #dcdfd8;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .style-buttons {
+        align-items: center; /* Center-align buttons for smaller screens */
+        margin-right: 0; /* Remove right margin on small screens */
+    }
+
+    .style-buttons button {
+        width: 100%; /* Make buttons stretch full-width on small screens */
+        max-width: 300px; /* Limit button width for better usability */
+    }
+}
+
+@media (max-width: 480px) {
+    .style-buttons button {
+        font-size: 14px; /* Adjust font size for very small screens */
+        padding: 8px 16px; /* Adjust padding for better fit */
+    }
+}

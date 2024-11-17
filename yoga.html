@@ -41,7 +41,7 @@
     <!-- Full-Screen Video with Text Overlay and Hover Effect -->
     <section class="video-section">
         <video autoplay muted loop class="fullscreen-video">
-            <source src="yoga-video.mp4" type="video/mp4">
+            <source src="videos/services/yoga-video.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div class="overlay"></div>
@@ -62,7 +62,7 @@
             </p>
         </div>
         <div class="trainer-image">
-            <img src="images/service images/yoga/RebaSmith.jpg" alt="Trainer Reba Smith">
+            <img id = "trainerImage" src="images/service images/yoga/RebaSmith.jpg" alt="Trainer Reba Smith">
         </div>
     </section>
 
@@ -78,16 +78,11 @@
 
 
     <section class="care-pricing-section">
-        <div class="care-content">
-            <h3>WE CARE FOR YOU!</h3>
-            <p>At our facility, we strongly believe in inclusivity and accessibility. That's why we offer special
-                discounts to our superheroes—people with disabilities, to help them access our services easily. We aim
-                to create a welcoming and empowering environment for everyone, making sure that no one is left out. Our
-                goal is to foster a community where everyone feels safe and supported, offering services at a reduced
-                price for those who need it most. Join us, and let's make fitness and wellness a space for all!</p>
+        <div class="action-buttons">
+            <button id="toggle-details">Show Details</button>
+            <button id="change-bg">Change Background Color</button>
         </div>
-
-        <div class="pricing-table">
+        <div class="pricing-table" style="display: none;">
             <h2>Our Pricing</h2>
             <table>
                 <tr>
@@ -114,6 +109,7 @@
             </table>
         </div>
     </section>
+    
 
     <!-- Footer -->
     <footer class="footer-container">
@@ -161,6 +157,7 @@
     </footer>
 
 
+<script src="scripts/rollover.js"></script>
 
 </body>
 
