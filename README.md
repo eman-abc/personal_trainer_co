@@ -1,0 +1,1 @@
+Personal Training Co. is a dynamic and user-friendly website made to promote and manage personal training services. It offers fitness programs, boot camps, and yoga classes. We chose this project because it helps us practice important software construction skills, like designing user-friendly pages and writing clean and efficient code.
